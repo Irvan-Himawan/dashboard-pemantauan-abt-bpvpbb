@@ -17,8 +17,9 @@ KAMUS_BULAN = {
 
 @st.cache_data(ttl=600)
 def load_data():
-    sheet_id = "1PuGjfkFt3MDDCDXG-GATEiRdxpjHJ-pQOvnml1oOszk"
-    gid = "1560378521"
+    # Mengambil ID dari brankas rahasia Streamlit Cloud
+    sheet_id = st.secrets["SHEET_ID"]
+    gid = st.secrets["SHEET_GID"]
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
     
     df = pd.read_csv(csv_url)
