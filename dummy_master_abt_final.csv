@@ -1,0 +1,506 @@
+no,id_program,pos_anggaran,nama_tempat_pelatihan,kejuruan,pelatihan,instruktur,jumlah_jp,tgl_awal_pelatihan,tgl_akhir_pelatihan,status_kegiatan_pelatihan,rencana_peserta,realisasi_peserta,sertifikasi,pic_pelatihan,batch_pelatihan
+1,PBKR-2026-001,PBK-Reguler,-,Pariwisata,Housekeeping,"Salwa Caesar Ramadhanty Supratman, S.Pd.",140,2026-11-08,2026-11-21,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+2,PBKR-2026-002,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Nita Wulandari, S.Pt.",140,2026-10-16,2026-10-29,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+3,PBKR-2026-003,PBK-Reguler,LPK Mitra 19 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Iwan Hermawan, S.Kom.",200,2026-09-30,2026-10-19,Rencana,16,0,Ya,Annisa Fitriani,batch 5
+4,PBKR-2026-004,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Lucy Natami Figna, S.P., M.Si.",120,2026-09-26,2026-10-07,Rencana,16,0,Ya,Annisa Fitriani,non-batch
+5,PBKR-2026-005,PBK-Reguler,LPK Mitra 14 (Dummy),Otomotif,Mekanik Sepeda Motor,"Suci Pebrianti Putri, S.Par.",120,2026-09-25,2026-10-06,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+6,PBKR-2026-006,PBK-Reguler,-,Bisnis Manajemen,Digital Marketing,"Nita Wulandari, S.Pt.",100,2026-09-27,2026-10-06,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+7,PBKR-2026-007,PBK-Reguler,LPK Mitra 20 (Dummy),Pariwisata,Housekeeping,"Alya Rahmaisyanti, S.Pt.",120,2026-10-13,2026-10-24,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+8,PBKR-2026-008,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Alya Rahmaisyanti, S.Pt.",100,2026-12-05,2026-12-14,Proses,16,16,Ya,Annisa Fitriani,batch 6
+9,PBKR-2026-009,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Dian Rahim, S.Tr.T.",120,2026-09-26,2026-10-07,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+10,PBKR-2026-010,PBK-Reguler,-,Otomotif,Teknisi AC Mobil,"Syani Ghozali Fauzan, S.Tr.T.",100,2026-09-02,2026-09-11,Rencana,16,0,Tidak,Rizky Ramadhan,batch 5
+11,PBKR-2026-011,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Ervin Puluhulawa, S.TP.",100,2026-11-01,2026-11-10,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+12,PBKR-2026-012,PBK-Reguler,LPK Mitra 1 (Dummy),Garmen Apparel,Fashion Technology,"Muhamad Najibulloh, S.Pt., M.Si.",100,2026-08-12,2026-08-21,Rencana,16,0,Tidak,Bagus Wicaksono,batch 4
+13,PBKR-2026-013,PBK-Reguler,LPK Mitra 11 (Dummy),Teknologi Informasi (TIK),Desain Grafis,"Zulzamal Zepri, S.P.",140,2026-08-17,2026-08-30,Rencana,16,0,Tidak,Annisa Fitriani,batch 5
+14,PBKR-2026-014,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Syani Ghozali Fauzan, S.Tr.T.",200,2026-11-27,2026-12-16,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+15,PBKR-2026-015,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Alya Rahmaisyanti, S.Pt.",200,2026-08-10,2026-08-29,Rencana,16,0,Ya,Rizky Ramadhan,batch 4
+16,PBKR-2026-016,PBK-Reguler,LPK Mitra 7 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Rakka Putri Ranati, S.TP.",120,2026-11-07,2026-11-18,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+17,PBKR-2026-017,PBK-Reguler,-,Otomotif,Teknisi AC Mobil,"Salwa Caesar Ramadhanty Supratman, S.Pd.",140,2026-08-19,2026-09-01,Proses,16,16,Ya,Rizky Ramadhan,batch 4
+18,PBKR-2026-018,PBK-Reguler,LPK Mitra 7 (Dummy),Pariwisata,Tour Guide,"Suci Pebrianti Putri, S.Par.",140,2026-08-29,2026-09-11,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+19,PBKR-2026-019,PBK-Reguler,LPK Mitra 3 (Dummy),Bisnis Manajemen,Customer Service,"Muhamad Najibulloh, S.Pt., M.Si.",240,2026-10-11,2026-11-03,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+20,PBKR-2026-020,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,-,120,2026-10-20,2026-10-31,Batal,16,0,Tidak,Annisa Fitriani,non-batch
+21,PBKR-2026-021,PBK-Reguler,LPK Mitra 6 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Hendra Gunawan, S.M",120,2026-08-10,2026-08-21,Proses,16,16,Ya,Dinda Maharani,batch 4
+22,PBKR-2026-022,PBK-Reguler,-,Otomotif,Teknisi AC Mobil,"Dian Rahim, S.Tr.T.",200,2026-08-21,2026-09-09,Rencana,16,0,Ya,Annisa Fitriani,non-batch
+23,PBKR-2026-023,PBK-Reguler,LPK Mitra 18 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Rakka Putri Ranati, S.TP.",120,2026-08-13,2026-08-24,Rencana,16,0,Ya,Dinda Maharani,batch 5
+24,PBKR-2026-024,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Zulzamal Zepri, S.P.",240,2026-09-26,2026-10-19,Proses,16,16,Ya,Bagus Wicaksono,batch 5
+25,PBKR-2026-025,PBK-Reguler,LPK Mitra 20 (Dummy),Teknologi Informasi (TIK),Desain Grafis,"Lucy Natami Figna, S.P., M.Si.",160,2026-08-15,2026-08-30,Rencana,16,0,Tidak,Annisa Fitriani,batch 4
+26,PBKR-2026-026,PBK-Reguler,LPK Mitra 13 (Dummy),Bisnis Manajemen,Customer Service,"Firdausi Nurfalah, S.Pi.",160,2026-11-26,2026-12-11,Proses,16,15,Tidak,Annisa Fitriani,batch 6
+27,PBKR-2026-027,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Ratih Azizah, S.Pi.",140,2026-11-21,2026-12-04,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+28,PBKR-2026-028,PBK-Reguler,LPK Mitra 6 (Dummy),Teknik Manufaktur,Las SMAW,"Resya Rhema Malinda, S.TP.",160,2026-10-07,2026-10-22,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+29,PBKR-2026-029,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Ervin Puluhulawa, S.TP.",200,2026-11-14,2026-12-03,Rencana,16,0,Tidak,Fajar Nugraha,non-batch
+30,PBKR-2026-030,PBK-Reguler,-,Otomotif,Teknisi AC Mobil,"Rakka Putri Ranati, S.TP.",100,2026-11-21,2026-11-30,Proses,16,15,Tidak,Bagus Wicaksono,batch 7
+31,PBKR-2026-031,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Muhamad Najibulloh, S.Pt., M.Si.",140,2026-08-28,2026-09-10,Rencana,16,0,Ya,Annisa Fitriani,batch 4
+32,PBKR-2026-032,PBK-Reguler,LPK Mitra 15 (Dummy),Otomotif,Mekanik Sepeda Motor,"Suci Pebrianti Putri, S.Par.",140,2026-11-28,2026-12-11,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+33,PBKR-2026-033,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Alya Rahmaisyanti, S.Pt.",240,2026-11-08,2026-12-01,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+34,PBKR-2026-034,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Ervin Puluhulawa, S.TP.",120,2026-09-29,2026-10-10,Rencana,16,0,Tidak,Dinda Maharani,batch 5
+35,PBKR-2026-035,PBK-Reguler,LPK Mitra 6 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Velayati Nurrachma Rizqi, S.Pt.",240,2026-11-04,2026-11-27,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+36,PBKR-2026-036,PBK-Reguler,LPK Mitra 3 (Dummy),Garmen Apparel,Fashion Technology,"Lucy Natami Figna, S.P., M.Si.",240,2026-11-08,2026-12-01,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+37,PBKR-2026-037,PBK-Reguler,LPK Mitra 9 (Dummy),Teknik Manufaktur,Las SMAW,"Hendra Gunawan, S.M",100,2026-08-23,2026-09-01,Proses,16,15,Tidak,Fajar Nugraha,batch 4
+38,PBKR-2026-038,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Alexander Julius Simamora, S.P.",200,2026-08-12,2026-08-31,Proses,16,16,Tidak,Dinda Maharani,batch 4
+39,PBKR-2026-039,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Muhamad Najibulloh, S.Pt., M.Si.",200,2026-11-28,2026-12-17,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+40,PBKR-2026-040,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Ervin Puluhulawa, S.TP.",120,2026-12-08,2026-12-19,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+41,PBKR-2026-041,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"I Nyoman Didi Harizena, S.P., M.Si.",120,2026-11-10,2026-11-21,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+42,PBKR-2026-042,PBK-Reguler,-,Teknologi Informasi (TIK),Web Development,"Alexander Julius Simamora, S.P.",240,2026-11-07,2026-11-30,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+43,PBKR-2026-043,PBK-Reguler,LPK Mitra 18 (Dummy),Pariwisata,Tour Guide,"Velayati Nurrachma Rizqi, S.Pt.",120,2026-08-14,2026-08-25,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+44,PBKR-2026-044,PBK-Reguler,LPK Mitra 5 (Dummy),Otomotif,Mekanik Sepeda Motor,"Asep Suherman, S.T",80,2026-08-11,2026-08-18,Rencana,16,0,Tidak,Bagus Wicaksono,batch 4
+45,PBKR-2026-045,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Zulzamal Zepri, S.P.",140,2026-11-27,2026-12-10,Proses,16,16,Tidak,Fajar Nugraha,batch 6
+46,PBKR-2026-046,PBK-Reguler,LPK Mitra 15 (Dummy),Otomotif,Mekanik Sepeda Motor,"Asep Suherman, S.T",200,2026-10-29,2026-11-17,Proses,16,16,Tidak,Dinda Maharani,batch 7
+47,PBKR-2026-047,PBK-Reguler,LPK Mitra 16 (Dummy),Pariwisata,Housekeeping,"Zeaty Abdillah, S.Pi.",240,2026-11-19,2026-12-12,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+48,PBKR-2026-048,PBK-Reguler,-,Bisnis Manajemen,Digital Marketing,"Syani Ghozali Fauzan, S.Tr.T.",100,2026-09-12,2026-09-21,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+49,PBKR-2026-049,PBK-Reguler,-,Pariwisata,Housekeeping,"Alexander Julius Simamora, S.P.",80,2026-09-20,2026-09-27,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+50,PBKR-2026-050,PBK-Reguler,LPK Mitra 15 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Zeaty Abdillah, S.Pi.",240,2026-10-09,2026-11-01,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+51,PBKR-2026-051,PBK-Reguler,LPK Mitra 10 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Salwa Caesar Ramadhanty Supratman, S.Pd.",240,2026-09-17,2026-10-10,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+52,PBKR-2026-052,PBK-Reguler,LPK Mitra 5 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,-,100,2026-08-21,2026-08-30,Batal,16,0,Tidak,Rizky Ramadhan,batch 5
+53,PBKR-2026-053,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Firdausi Nurfalah, S.Pi.",240,2026-10-09,2026-11-01,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+54,PBKR-2026-054,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"I Nyoman Didi Harizena, S.P., M.Si.",140,2026-08-16,2026-08-29,Rencana,16,0,Ya,Bagus Wicaksono,batch 5
+55,PBKR-2026-055,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Asep Suherman, S.T",160,2026-09-10,2026-09-25,Rencana,16,0,Ya,Bagus Wicaksono,batch 5
+56,PBKR-2026-056,PBK-Reguler,LPK Mitra 17 (Dummy),Bisnis Manajemen,Customer Service,"Velayati Nurrachma Rizqi, S.Pt.",160,2026-09-20,2026-10-05,Rencana,16,0,Tidak,Annisa Fitriani,batch 5
+57,PBKR-2026-057,PBK-Reguler,-,Teknologi Informasi (TIK),Web Development,"Ervin Puluhulawa, S.TP.",100,2026-08-14,2026-08-23,Rencana,16,0,Ya,Bagus Wicaksono,batch 5
+58,PBKR-2026-058,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Lina Aulia Rahmah, S.TP.",100,2026-08-28,2026-09-06,Rencana,16,0,Ya,Dinda Maharani,batch 4
+59,PBKR-2026-059,PBK-Reguler,LPK Mitra 14 (Dummy),Teknologi Informasi (TIK),Web Development,"Hendra Gunawan, S.M",160,2026-10-21,2026-11-05,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+60,PBKR-2026-060,PBK-Reguler,LPK Mitra 19 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Zeaty Abdillah, S.Pi.",100,2026-09-27,2026-10-06,Rencana,16,0,Ya,Rizky Ramadhan,batch 5
+61,PBKR-2026-061,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"I Nyoman Didi Harizena, S.P., M.Si.",80,2026-09-19,2026-09-26,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+62,PBKR-2026-062,PBK-Reguler,LPK Mitra 13 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Rakka Putri Ranati, S.TP.",200,2026-10-05,2026-10-24,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+63,PBKR-2026-063,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Resya Rhema Malinda, S.TP.",120,2026-09-05,2026-09-16,Rencana,16,0,Ya,Fajar Nugraha,batch 5
+64,PBKR-2026-064,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Ulfimarjan, S.TP.",240,2026-08-18,2026-09-10,Rencana,16,0,Ya,Dinda Maharani,batch 5
+65,PBKR-2026-065,PBK-Reguler,LPK Mitra 15 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Egi Setiana, S.P.",140,2026-09-08,2026-09-21,Proses,16,16,Ya,Rizky Ramadhan,batch 5
+66,PBKR-2026-066,PBK-Reguler,LPK Mitra 7 (Dummy),Teknologi Informasi (TIK),Network Administrator,"I Nyoman Didi Harizena, S.P., M.Si.",80,2026-09-10,2026-09-17,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+67,PBKR-2026-067,PBK-Reguler,LPK Mitra 17 (Dummy),Garmen Apparel,Fashion Technology,"Ulfimarjan, S.TP.",160,2026-10-28,2026-11-12,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+68,PBKR-2026-068,PBK-Reguler,LPK Mitra 19 (Dummy),Pariwisata,Housekeeping,"Ratih Azizah, S.Pi.",80,2026-09-03,2026-09-10,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+69,PBKR-2026-069,PBK-Reguler,LPK Mitra 19 (Dummy),Pariwisata,Housekeeping,"Ratih Azizah, S.Pi.",80,2026-08-15,2026-08-22,Proses,16,16,Tidak,Rizky Ramadhan,batch 5
+70,PBKR-2026-070,PBK-Reguler,LPK Mitra 11 (Dummy),Bisnis Manajemen,Customer Service,-,160,2026-09-11,2026-09-26,Batal,16,0,Ya,Annisa Fitriani,non-batch
+71,PBKR-2026-071,PBK-Reguler,-,Pariwisata,Housekeeping,"Lucy Natami Figna, S.P., M.Si.",120,2026-09-04,2026-09-15,Proses,16,16,Tidak,Rizky Ramadhan,batch 5
+72,PBKR-2026-072,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Ratih Azizah, S.Pi.",140,2026-10-29,2026-11-11,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+73,PBKR-2026-073,PBK-Reguler,LPK Mitra 12 (Dummy),Bisnis Manajemen,Customer Service,"Danu Unggul Ardiyanto, S.M.",160,2026-09-05,2026-09-20,Proses,16,16,Ya,Rizky Ramadhan,batch 5
+74,PBKR-2026-074,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Lina Aulia Rahmah, S.TP.",200,2026-10-16,2026-11-04,Rencana,16,0,Ya,Rizky Ramadhan,batch 7
+75,PBKR-2026-075,PBK-Reguler,LPK Mitra 6 (Dummy),Bisnis Manajemen,Customer Service,"Ervin Puluhulawa, S.TP.",240,2026-09-03,2026-09-26,Proses,16,15,Tidak,Bagus Wicaksono,batch 6
+76,PBKR-2026-076,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Resya Rhema Malinda, S.TP.",200,2026-11-18,2026-12-07,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+77,PBKR-2026-077,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Asep Suherman, S.T",140,2026-08-24,2026-09-06,Rencana,16,0,Ya,Bagus Wicaksono,batch 4
+78,PBKR-2026-078,PBK-Reguler,LPK Mitra 11 (Dummy),Pariwisata,Tour Guide,-,100,2026-09-26,2026-10-05,Batal,16,0,Ya,Annisa Fitriani,non-batch
+79,PBKR-2026-079,PBK-Reguler,LPK Mitra 14 (Dummy),Otomotif,Mekanik Sepeda Motor,"Suci Pebrianti Putri, S.Par.",100,2026-08-11,2026-08-20,Rencana,16,0,Ya,Fajar Nugraha,batch 4
+80,PBKR-2026-080,PBK-Reguler,LPK Mitra 1 (Dummy),Pariwisata,Barista,"Lucy Natami Figna, S.P., M.Si.",240,2026-10-11,2026-11-03,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+81,PBKR-2026-081,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Suci Pebrianti Putri, S.Par.",160,2026-11-03,2026-11-18,Proses,16,16,Ya,Dinda Maharani,batch 6
+82,PBKR-2026-082,PBK-Reguler,LPK Mitra 5 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Asep Suherman, S.T",80,2026-11-19,2026-11-26,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+83,PBKR-2026-083,PBK-Reguler,LPK Mitra 15 (Dummy),Teknologi Informasi (TIK),Web Development,"Danu Unggul Ardiyanto, S.M.",120,2026-11-18,2026-11-29,Proses,16,16,Ya,Rizky Ramadhan,non-batch
+84,PBKR-2026-084,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Hendra Gunawan, S.M",240,2026-11-06,2026-11-29,Proses,16,16,Tidak,Bagus Wicaksono,batch 6
+85,PBKR-2026-085,PBK-Reguler,LPK Mitra 3 (Dummy),Otomotif,Mekanik Sepeda Motor,"Resya Rhema Malinda, S.TP.",140,2026-09-18,2026-10-01,Proses,16,16,Ya,Fajar Nugraha,batch 6
+86,PBKR-2026-086,PBK-Reguler,LPK Mitra 1 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Egi Setiana, S.P.",100,2026-11-23,2026-12-02,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+87,PBKR-2026-087,PBK-Reguler,LPK Mitra 3 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Egi Setiana, S.P.",120,2026-10-25,2026-11-05,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+88,PBKR-2026-088,PBK-Reguler,-,Otomotif,Teknisi AC Mobil,"Suci Pebrianti Putri, S.Par.",100,2026-09-14,2026-09-23,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+89,PBKR-2026-089,PBK-Reguler,LPK Mitra 10 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Ratih Azizah, S.Pi.",80,2026-08-24,2026-08-31,Proses,16,15,Tidak,Bagus Wicaksono,batch 5
+90,PBKR-2026-090,PBK-Reguler,LPK Mitra 12 (Dummy),Otomotif,Teknisi AC Mobil,"Lina Aulia Rahmah, S.TP.",140,2026-11-07,2026-11-20,Proses,16,16,Ya,Bagus Wicaksono,batch 7
+91,PBKR-2026-091,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Alya Rahmaisyanti, S.Pt.",80,2026-09-05,2026-09-12,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+92,PBKR-2026-092,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Danu Unggul Ardiyanto, S.M.",100,2026-08-19,2026-08-28,Proses,16,15,Tidak,Bagus Wicaksono,batch 4
+93,PBKR-2026-093,PBK-Reguler,LPK Mitra 7 (Dummy),Teknik Manufaktur,Las SMAW,"Nita Wulandari, S.Pt.",120,2026-10-30,2026-11-10,Proses,16,15,Ya,Bagus Wicaksono,batch 6
+94,PBKR-2026-094,PBK-Reguler,LPK Mitra 20 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Iwan Hermawan, S.Kom.",140,2026-10-28,2026-11-10,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+95,PBKR-2026-095,PBK-Reguler,LPK Mitra 8 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Danu Unggul Ardiyanto, S.M.",80,2026-10-06,2026-10-13,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+96,PBKR-2026-096,PBK-Reguler,LPK Mitra 11 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Zulzamal Zepri, S.P.",80,2026-11-16,2026-11-23,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+97,PBKR-2026-097,PBK-Reguler,LPK Mitra 14 (Dummy),Teknik Manufaktur,Las SMAW,"Zeaty Abdillah, S.Pi.",80,2026-08-26,2026-09-02,Proses,16,16,Tidak,Fajar Nugraha,batch 4
+98,PBKR-2026-098,PBK-Reguler,LPK Mitra 16 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Iwan Hermawan, S.Kom.",140,2026-09-11,2026-09-24,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+99,PBKR-2026-099,PBK-Reguler,-,Pariwisata,Housekeeping,"Ulfimarjan, S.TP.",240,2026-11-14,2026-12-07,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+100,PBKR-2026-100,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Firdausi Nurfalah, S.Pi.",200,2026-08-20,2026-09-08,Proses,16,16,Tidak,Fajar Nugraha,batch 4
+101,PBKR-2026-101,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Syani Ghozali Fauzan, S.Tr.T.",100,2026-09-22,2026-10-01,Proses,16,16,Tidak,Fajar Nugraha,batch 5
+102,PBKR-2026-102,PBK-Reguler,LPK Mitra 19 (Dummy),Otomotif,Teknisi AC Mobil,"Nita Wulandari, S.Pt.",160,2026-11-19,2026-12-04,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+103,PBKR-2026-103,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"Nita Wulandari, S.Pt.",200,2026-08-24,2026-09-12,Proses,16,15,Ya,Dinda Maharani,non-batch
+104,PBKR-2026-104,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Dian Rahim, S.Tr.T.",100,2026-10-31,2026-11-09,Proses,16,16,Ya,Fajar Nugraha,non-batch
+105,PBKR-2026-105,PBK-Reguler,LPK Mitra 2 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Egi Setiana, S.P.",80,2026-08-23,2026-08-30,Rencana,16,0,Ya,Dinda Maharani,batch 4
+106,PBKR-2026-106,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Rakka Putri Ranati, S.TP.",140,2026-09-15,2026-09-28,Proses,16,16,Ya,Dinda Maharani,batch 5
+107,PBKR-2026-107,PBK-Reguler,LPK Mitra 3 (Dummy),Otomotif,Teknisi AC Mobil,"Syani Ghozali Fauzan, S.Tr.T.",240,2026-10-29,2026-11-21,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+108,PBKR-2026-108,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Muhamad Najibulloh, S.Pt., M.Si.",200,2026-11-08,2026-11-27,Rencana,16,0,Ya,Bagus Wicaksono,non-batch
+109,PBKR-2026-109,PBK-Reguler,LPK Mitra 2 (Dummy),Pariwisata,Tour Guide,"Velayati Nurrachma Rizqi, S.Pt.",80,2026-08-29,2026-09-05,Rencana,16,0,Tidak,Rizky Ramadhan,batch 4
+110,PBKR-2026-110,PBK-Reguler,LPK Mitra 20 (Dummy),Bisnis Manajemen,Customer Service,"Hendra Gunawan, S.M",160,2026-09-02,2026-09-17,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+111,PBKR-2026-111,PBK-Reguler,LPK Mitra 18 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Zulzamal Zepri, S.P.",160,2026-10-28,2026-11-12,Proses,16,15,Ya,Annisa Fitriani,batch 7
+112,PBKR-2026-112,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Salwa Caesar Ramadhanty Supratman, S.Pd.",160,2026-11-22,2026-12-07,Rencana,16,0,Ya,Rizky Ramadhan,non-batch
+113,PBKR-2026-113,PBK-Reguler,LPK Mitra 2 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Ulfimarjan, S.TP.",120,2026-09-21,2026-10-02,Rencana,16,0,Ya,Annisa Fitriani,batch 5
+114,PBKR-2026-114,PBK-Reguler,LPK Mitra 12 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Firdausi Nurfalah, S.Pi.",140,2026-11-06,2026-11-19,Proses,16,15,Ya,Bagus Wicaksono,batch 6
+115,PBKR-2026-115,PBK-Reguler,LPK Mitra 1 (Dummy),Otomotif,Teknisi AC Mobil,"Hendra Gunawan, S.M",80,2026-09-28,2026-10-05,Proses,16,15,Tidak,Fajar Nugraha,batch 5
+116,PBKR-2026-116,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Resya Rhema Malinda, S.TP.",120,2026-08-23,2026-09-03,Rencana,16,0,Tidak,Annisa Fitriani,batch 4
+117,PBKR-2026-117,PBK-Reguler,LPK Mitra 5 (Dummy),Pariwisata,Housekeeping,"Rakka Putri Ranati, S.TP.",200,2026-08-26,2026-09-14,Rencana,16,0,Ya,Fajar Nugraha,batch 5
+118,PBKR-2026-118,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Lina Aulia Rahmah, S.TP.",160,2026-09-11,2026-09-26,Rencana,16,0,Tidak,Dinda Maharani,non-batch
+119,PBKR-2026-119,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Alexander Julius Simamora, S.P.",80,2026-10-18,2026-10-25,Rencana,16,0,Tidak,Annisa Fitriani,non-batch
+120,PBKR-2026-120,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Iwan Hermawan, S.Kom.",140,2026-08-21,2026-09-03,Rencana,16,0,Tidak,Dinda Maharani,batch 4
+121,PBKR-2026-121,PBK-Reguler,LPK Mitra 3 (Dummy),Pariwisata,Barista,"Velayati Nurrachma Rizqi, S.Pt.",80,2026-12-09,2026-12-16,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+122,PBKR-2026-122,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"I Nyoman Didi Harizena, S.P., M.Si.",120,2026-12-03,2026-12-14,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+123,PBKR-2026-123,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Zeaty Abdillah, S.Pi.",200,2026-09-05,2026-09-24,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+124,PBKR-2026-124,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Iwan Hermawan, S.Kom.",140,2026-11-16,2026-11-29,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+125,PBKR-2026-125,PBK-Reguler,LPK Mitra 18 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Muhamad Najibulloh, S.Pt., M.Si.",240,2026-09-15,2026-10-08,Proses,16,16,Ya,Dinda Maharani,batch 6
+126,PBKR-2026-126,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Danu Unggul Ardiyanto, S.M.",200,2026-10-22,2026-11-10,Proses,16,16,Tidak,Dinda Maharani,batch 7
+127,PBKR-2026-127,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Asep Suherman, S.T",240,2026-10-01,2026-10-24,Proses,16,16,Ya,Bagus Wicaksono,batch 6
+128,PBKR-2026-128,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Syani Ghozali Fauzan, S.Tr.T.",160,2026-10-13,2026-10-28,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+129,PBKR-2026-129,PBK-Reguler,LPK Mitra 18 (Dummy),Bisnis Manajemen,Digital Marketing,"Resya Rhema Malinda, S.TP.",160,2026-10-27,2026-11-11,Proses,16,16,Tidak,Dinda Maharani,batch 6
+130,PBKR-2026-130,PBK-Reguler,LPK Mitra 2 (Dummy),Otomotif,Mekanik Sepeda Motor,"Dian Rahim, S.Tr.T.",80,2026-11-21,2026-11-28,Proses,16,16,Ya,Dinda Maharani,batch 6
+131,PBKR-2026-131,PBK-Reguler,LPK Mitra 2 (Dummy),Teknik Manufaktur,Las SMAW,"Egi Setiana, S.P.",200,2026-10-02,2026-10-21,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+132,PBKR-2026-132,PBK-Reguler,LPK Mitra 7 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Dian Rahim, S.Tr.T.",200,2026-10-10,2026-10-29,Rencana,16,0,Tidak,Annisa Fitriani,non-batch
+133,PBKR-2026-133,PBK-Reguler,LPK Mitra 14 (Dummy),Teknologi Informasi (TIK),Web Development,"Egi Setiana, S.P.",100,2026-11-12,2026-11-21,Rencana,16,0,Ya,Dinda Maharani,non-batch
+134,PBKR-2026-134,PBK-Reguler,LPK Mitra 17 (Dummy),Teknologi Informasi (TIK),Web Development,"Zulzamal Zepri, S.P.",140,2026-09-07,2026-09-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+135,PBKR-2026-135,PBK-Reguler,LPK Mitra 15 (Dummy),Teknologi Informasi (TIK),Desain Grafis,"Zeaty Abdillah, S.Pi.",100,2026-08-13,2026-08-22,Rencana,16,0,Tidak,Dinda Maharani,non-batch
+136,PBKR-2026-136,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,-,100,2026-09-02,2026-09-11,Batal,16,0,Tidak,Bagus Wicaksono,batch 6
+137,PBKR-2026-137,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Syani Ghozali Fauzan, S.Tr.T.",200,2026-08-10,2026-08-29,Rencana,16,0,Tidak,Fajar Nugraha,batch 4
+138,PBKR-2026-138,PBK-Reguler,-,Pariwisata,Tour Guide,"Ratih Azizah, S.Pi.",80,2026-11-13,2026-11-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+139,PBKR-2026-139,PBK-Reguler,LPK Mitra 4 (Dummy),Teknologi Informasi (TIK),Web Development,"Lina Aulia Rahmah, S.TP.",80,2026-09-28,2026-10-05,Proses,16,16,Ya,Annisa Fitriani,batch 5
+140,PBKR-2026-140,PBK-Reguler,-,Teknologi Informasi (TIK),Web Development,-,160,2026-09-06,2026-09-21,Batal,16,0,Tidak,Annisa Fitriani,non-batch
+141,PBKR-2026-141,PBK-Reguler,LPK Mitra 7 (Dummy),Teknologi Informasi (TIK),Desain Grafis,"Alexander Julius Simamora, S.P.",120,2026-09-28,2026-10-09,Proses,16,16,Tidak,Rizky Ramadhan,non-batch
+142,PBKR-2026-142,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Lina Aulia Rahmah, S.TP.",120,2026-08-15,2026-08-26,Rencana,16,0,Tidak,Annisa Fitriani,batch 4
+143,PBKR-2026-143,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"Ervin Puluhulawa, S.TP.",80,2026-08-24,2026-08-31,Rencana,16,0,Ya,Fajar Nugraha,batch 5
+144,PBKR-2026-144,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Ratih Azizah, S.Pi.",240,2026-09-16,2026-10-09,Proses,16,16,Ya,Bagus Wicaksono,batch 5
+145,PBKR-2026-145,PBK-Reguler,LPK Mitra 6 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Alya Rahmaisyanti, S.Pt.",160,2026-09-20,2026-10-05,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+146,PBKR-2026-146,PBK-Reguler,LPK Mitra 5 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Firdausi Nurfalah, S.Pi.",200,2026-09-09,2026-09-28,Rencana,16,0,Ya,Annisa Fitriani,batch 5
+147,PBKR-2026-147,PBK-Reguler,LPK Mitra 3 (Dummy),Bisnis Manajemen,Customer Service,"Salwa Caesar Ramadhanty Supratman, S.Pd.",100,2026-09-06,2026-09-15,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+148,PBKR-2026-148,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Lina Aulia Rahmah, S.TP.",120,2026-11-27,2026-12-08,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+149,PBKR-2026-149,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Danu Unggul Ardiyanto, S.M.",120,2026-09-23,2026-10-04,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+150,PBKR-2026-150,PBK-Reguler,-,Bisnis Manajemen,Digital Marketing,"Resya Rhema Malinda, S.TP.",80,2026-08-14,2026-08-21,Proses,16,16,Ya,Rizky Ramadhan,batch 4
+151,PBKR-2026-151,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Salwa Caesar Ramadhanty Supratman, S.Pd.",240,2026-10-15,2026-11-07,Rencana,16,0,Ya,Annisa Fitriani,non-batch
+152,PBKR-2026-152,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"I Nyoman Didi Harizena, S.P., M.Si.",160,2026-10-23,2026-11-07,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+153,PBKR-2026-153,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Ratih Azizah, S.Pi.",120,2026-12-07,2026-12-18,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+154,PBKR-2026-154,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Velayati Nurrachma Rizqi, S.Pt.",240,2026-10-10,2026-11-02,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+155,PBKR-2026-155,PBK-Reguler,-,Bisnis Manajemen,Administrasi Perkantoran,"Egi Setiana, S.P.",80,2026-09-24,2026-10-01,Rencana,16,0,Tidak,Annisa Fitriani,batch 5
+156,PBKR-2026-156,PBK-Reguler,-,Teknologi Informasi (TIK),Web Development,"I Nyoman Didi Harizena, S.P., M.Si.",80,2026-09-27,2026-10-04,Proses,16,16,Tidak,Rizky Ramadhan,batch 5
+157,PBKR-2026-157,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Lina Aulia Rahmah, S.TP.",80,2026-10-08,2026-10-15,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+158,PBKR-2026-158,PBK-Reguler,LPK Mitra 9 (Dummy),Garmen Apparel,Fashion Technology,"Suci Pebrianti Putri, S.Par.",200,2026-10-10,2026-10-29,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+159,PBKR-2026-159,PBK-Reguler,LPK Mitra 13 (Dummy),Teknik Manufaktur,Operator Mesin Bubut,"Alexander Julius Simamora, S.P.",120,2026-09-04,2026-09-15,Rencana,16,0,Tidak,Dinda Maharani,batch 5
+160,PBKR-2026-160,PBK-Reguler,LPK Mitra 5 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Zeaty Abdillah, S.Pi.",100,2026-11-02,2026-11-11,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+161,PBKR-2026-161,PBK-Reguler,LPK Mitra 19 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Ulfimarjan, S.TP.",240,2026-10-04,2026-10-27,Rencana,16,0,Tidak,Annisa Fitriani,non-batch
+162,PBKR-2026-162,PBK-Reguler,LPK Mitra 16 (Dummy),Pariwisata,Barista,"Dian Rahim, S.Tr.T.",120,2026-09-14,2026-09-25,Proses,16,16,Tidak,Rizky Ramadhan,non-batch
+163,PBKR-2026-163,PBK-Reguler,LPK Mitra 1 (Dummy),Teknologi Informasi (TIK),Web Development,"Dian Rahim, S.Tr.T.",140,2026-11-29,2026-12-12,Proses,16,15,Tidak,Fajar Nugraha,batch 6
+164,PBKR-2026-164,PBK-Reguler,LPK Mitra 19 (Dummy),Pariwisata,Barista,"Asep Suherman, S.T",160,2026-11-27,2026-12-12,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+165,PBKR-2026-165,PBK-Reguler,LPK Mitra 8 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Ervin Puluhulawa, S.TP.",200,2026-10-11,2026-10-30,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+166,PBKR-2026-166,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Rakka Putri Ranati, S.TP.",160,2026-12-02,2026-12-17,Proses,16,15,Tidak,Rizky Ramadhan,non-batch
+167,PBKR-2026-167,PBK-Reguler,LPK Mitra 9 (Dummy),Pariwisata,Barista,"Nita Wulandari, S.Pt.",120,2026-08-12,2026-08-23,Rencana,16,0,Ya,Fajar Nugraha,batch 5
+168,PBKR-2026-168,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"Ratih Azizah, S.Pi.",100,2026-10-19,2026-10-28,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+169,PBKR-2026-169,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Nita Wulandari, S.Pt.",100,2026-09-17,2026-09-26,Proses,16,16,Tidak,Dinda Maharani,batch 5
+170,PBKR-2026-170,PBK-Reguler,LPK Mitra 5 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Hendra Gunawan, S.M",140,2026-11-30,2026-12-13,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+171,PBKR-2026-171,PBK-Reguler,LPK Mitra 4 (Dummy),Otomotif,Mekanik Sepeda Motor,"Alya Rahmaisyanti, S.Pt.",140,2026-10-25,2026-11-07,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+172,PBKR-2026-172,PBK-Reguler,LPK Mitra 7 (Dummy),Bisnis Manajemen,Digital Marketing,"Nita Wulandari, S.Pt.",240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,non-batch
+173,PBKR-2026-173,PBK-Reguler,-,Teknologi Informasi (TIK),Network Administrator,"Salwa Caesar Ramadhanty Supratman, S.Pd.",240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+174,PBKR-2026-174,PBK-Reguler,LPK Mitra 19 (Dummy),Pariwisata,Tour Guide,-,200,2026-09-22,2026-10-11,Batal,16,0,Ya,Fajar Nugraha,batch 5
+175,PBKR-2026-175,PBK-Reguler,LPK Mitra 6 (Dummy),Pariwisata,Tour Guide,"Egi Setiana, S.P.",160,2026-12-04,2026-12-19,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+176,PBKR-2026-176,PBK-Reguler,LPK Mitra 17 (Dummy),Pariwisata,Housekeeping,-,200,2026-10-11,2026-10-30,Batal,16,0,Ya,Dinda Maharani,batch 7
+177,PBKR-2026-177,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Lucy Natami Figna, S.P., M.Si.",240,2026-12-01,2026-12-24,Proses,16,15,Ya,Fajar Nugraha,non-batch
+178,PBKR-2026-178,PBK-Reguler,LPK Mitra 20 (Dummy),Teknologi Informasi (TIK),Network Administrator,"Iwan Hermawan, S.Kom.",140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+179,PBKR-2026-179,PBK-Reguler,-,Garmen Apparel,Fashion Technology,"Egi Setiana, S.P.",240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+180,PBKR-2026-180,PBK-Reguler,LPK Mitra 20 (Dummy),Teknologi Informasi (TIK),Desain Grafis,"Velayati Nurrachma Rizqi, S.Pt.",120,2026-09-08,2026-09-19,Rencana,16,0,Tidak,Annisa Fitriani,non-batch
+181,PBKR-2026-181,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"I Nyoman Didi Harizena, S.P., M.Si.",140,2026-10-05,2026-10-18,Rencana,16,0,Ya,Dinda Maharani,batch 6
+182,PBKR-2026-182,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Egi Setiana, S.P.",120,2026-08-10,2026-08-21,Proses,16,16,Ya,Annisa Fitriani,batch 5
+183,PBKR-2026-183,PBK-Reguler,LPK Mitra 13 (Dummy),Otomotif,Teknisi AC Mobil,"Hendra Gunawan, S.M",120,2026-10-08,2026-10-19,Proses,16,16,Ya,Dinda Maharani,batch 7
+184,PBKR-2026-184,PBK-Reguler,-,Teknik Manufaktur,Las SMAW,"Alya Rahmaisyanti, S.Pt.",200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+185,PBKR-2026-185,PBK-Reguler,-,Pariwisata,Barista,"Syani Ghozali Fauzan, S.Tr.T.",80,2026-10-04,2026-10-11,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+186,PBKR-2026-186,PBK-Reguler,-,Bisnis Manajemen,Digital Marketing,"Egi Setiana, S.P.",240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+187,PBKR-2026-187,PBK-Reguler,-,Otomotif,Mekanik Sepeda Motor,"Lucy Natami Figna, S.P., M.Si.",160,2026-12-02,2026-12-17,Rencana,16,0,Ya,Bagus Wicaksono,non-batch
+188,PBKR-2026-188,PBK-Reguler,LPK Mitra 10 (Dummy),Bisnis Manajemen,Digital Marketing,"Danu Unggul Ardiyanto, S.M.",160,2026-12-02,2026-12-17,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+189,PBKR-2026-189,PBK-Reguler,LPK Mitra 13 (Dummy),Otomotif,Mekanik Sepeda Motor,"Rakka Putri Ranati, S.TP.",100,2026-10-25,2026-11-03,Proses,16,15,Ya,Rizky Ramadhan,batch 6
+190,PBKR-2026-190,PBK-Reguler,LPK Mitra 6 (Dummy),Bisnis Manajemen,Digital Marketing,"Alexander Julius Simamora, S.P.",100,2026-12-07,2026-12-16,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+191,PBKR-2026-191,PBK-Reguler,-,Bisnis Manajemen,Customer Service,"Nita Wulandari, S.Pt.",140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+192,PBKR-2026-192,PBK-Reguler,-,Garmen Apparel,Menjahit Komponen Pakaian,"Nita Wulandari, S.Pt.",120,2026-12-05,2026-12-16,Proses,16,15,Tidak,Annisa Fitriani,batch 6
+193,PBKR-2026-193,PBK-Reguler,-,Teknologi Informasi (TIK),Desain Grafis,"Suci Pebrianti Putri, S.Par.",160,2026-12-01,2026-12-16,Proses,16,15,Ya,Bagus Wicaksono,batch 7
+194,PBKR-2026-194,PBK-Reguler,LPK Mitra 2 (Dummy),Pariwisata,Tour Guide,"Dian Rahim, S.Tr.T.",100,2026-08-11,2026-08-20,Rencana,16,0,Tidak,Rizky Ramadhan,batch 4
+195,PBKR-2026-195,PBK-Reguler,LPK Mitra 1 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Ulfimarjan, S.TP.",120,2026-12-08,2026-12-19,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+196,PBKR-2026-196,PBK-Reguler,LPK Mitra 10 (Dummy),Bisnis Manajemen,Digital Marketing,-,200,2026-08-28,2026-09-16,Batal,16,0,Tidak,Rizky Ramadhan,batch 5
+197,PBKR-2026-197,PBK-Reguler,LPK Mitra 17 (Dummy),Garmen Apparel,Menjahit Komponen Pakaian,"Alexander Julius Simamora, S.P.",120,2026-10-26,2026-11-06,Proses,16,16,Tidak,Rizky Ramadhan,batch 7
+198,PBKR-2026-198,PBK-Reguler,LPK Mitra 1 (Dummy),Garmen Apparel,Fashion Technology,"I Nyoman Didi Harizena, S.P., M.Si.",140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Bagus Wicaksono,non-batch
+199,PBKR-2026-199,PBK-Reguler,-,Teknik Manufaktur,Operator Mesin Bubut,"Firdausi Nurfalah, S.Pi.",100,2026-09-29,2026-10-08,Rencana,16,0,Tidak,Rizky Ramadhan,batch 5
+200,PBKR-2026-200,PBK-Reguler,LPK Mitra 10 (Dummy),Bisnis Manajemen,Administrasi Perkantoran,"Lucy Natami Figna, S.P., M.Si.",200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+201,TMT-2026-201,TMT DUDI,Perusahaan Mitra 6,Teknik Manufaktur,Las SMAW,Siti Aminah,200,2026-09-25,2026-10-14,Rencana,16,0,Tidak,Fajar Nugraha,batch 5
+202,TMT-2026-202,TMT DUDI,Perusahaan Mitra 15,Teknik Manufaktur,Las SMAW,Rina Marlina,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+203,TMT-2026-203,TMT DUDI,Perusahaan Mitra 29,Bisnis Manajemen,Digital Marketing,Agus Setiawan,200,2026-09-17,2026-10-06,Proses,16,15,Ya,Rizky Ramadhan,batch 6
+204,TMT-2026-204,TMT DUDI,Perusahaan Mitra 3,Otomotif,Mekanik Sepeda Motor,Rina Marlina,160,2026-11-02,2026-11-17,Proses,16,15,Ya,Annisa Fitriani,batch 6
+205,TMT-2026-205,TMT DUDI,Perusahaan Mitra 3,Bisnis Manajemen,Customer Service,Agus Setiawan,120,2026-11-04,2026-11-15,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+206,TMT-2026-206,TMT DUDI,Perusahaan Mitra 8,Pariwisata,Housekeeping,Rina Marlina,200,2026-10-13,2026-11-01,Rencana,16,0,Ya,Dinda Maharani,non-batch
+207,TMT-2026-207,TMT DUDI,Perusahaan Mitra 7,Pariwisata,Barista,Hendra Wijaya,140,2026-11-02,2026-11-15,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+208,TMT-2026-208,TMT DUDI,Perusahaan Mitra 23,Bisnis Manajemen,Digital Marketing,Hendra Wijaya,120,2026-09-28,2026-10-09,Rencana,16,0,Ya,Dinda Maharani,batch 5
+209,TMT-2026-209,TMT DUDI,Perusahaan Mitra 37,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,160,2026-10-16,2026-10-31,Proses,16,15,Tidak,Fajar Nugraha,batch 7
+210,TMT-2026-210,TMT DUDI,Perusahaan Mitra 47,Garmen Apparel,Fashion Technology,Siti Aminah,80,2026-11-12,2026-11-19,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+211,TMT-2026-211,TMT DUDI,Perusahaan Mitra 1,Bisnis Manajemen,Customer Service,Agus Setiawan,80,2026-11-26,2026-12-03,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+212,TMT-2026-212,TMT DUDI,Perusahaan Mitra 6,Teknologi Informasi (TIK),Desain Grafis,Agus Setiawan,100,2026-10-12,2026-10-21,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+213,TMT-2026-213,TMT DUDI,Perusahaan Mitra 18,Bisnis Manajemen,Digital Marketing,Agus Setiawan,80,2026-10-27,2026-11-03,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+214,TMT-2026-214,TMT DUDI,Perusahaan Mitra 47,Teknik Manufaktur,Las SMAW,Agus Setiawan,200,2026-08-11,2026-08-30,Proses,16,15,Tidak,Rizky Ramadhan,batch 4
+215,TMT-2026-215,TMT DUDI,Perusahaan Mitra 18,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,200,2026-08-15,2026-09-03,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+216,TMT-2026-216,TMT DUDI,Perusahaan Mitra 36,Teknologi Informasi (TIK),Network Administrator,Budi Santoso,120,2026-10-06,2026-10-17,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+217,TMT-2026-217,TMT DUDI,Perusahaan Mitra 48,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,200,2026-08-10,2026-08-29,Proses,16,16,Tidak,Fajar Nugraha,non-batch
+218,TMT-2026-218,TMT DUDI,Perusahaan Mitra 18,Teknik Manufaktur,Las SMAW,Budi Santoso,140,2026-08-15,2026-08-28,Rencana,16,0,Ya,Rizky Ramadhan,batch 4
+219,TMT-2026-219,TMT DUDI,Perusahaan Mitra 31,Teknologi Informasi (TIK),Desain Grafis,Budi Santoso,200,2026-09-01,2026-09-20,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+220,TMT-2026-220,TMT DUDI,Perusahaan Mitra 36,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,240,2026-10-26,2026-11-18,Proses,16,16,Tidak,Rizky Ramadhan,non-batch
+221,TMT-2026-221,TMT DUDI,Perusahaan Mitra 30,Otomotif,Teknisi AC Mobil,Hendra Wijaya,100,2026-11-17,2026-11-26,Rencana,16,0,Tidak,Fajar Nugraha,non-batch
+222,TMT-2026-222,TMT DUDI,Perusahaan Mitra 28,Pariwisata,Barista,Hendra Wijaya,200,2026-11-28,2026-12-17,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+223,TMT-2026-223,TMT DUDI,Perusahaan Mitra 15,Teknik Manufaktur,Las SMAW,Budi Santoso,120,2026-11-24,2026-12-05,Proses,16,15,Tidak,Dinda Maharani,batch 7
+224,TMT-2026-224,TMT DUDI,Perusahaan Mitra 39,Teknologi Informasi (TIK),Desain Grafis,Rina Marlina,240,2026-08-23,2026-09-15,Rencana,16,0,Tidak,Fajar Nugraha,batch 5
+225,TMT-2026-225,TMT DUDI,Perusahaan Mitra 20,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,140,2026-11-24,2026-12-07,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+226,TMT-2026-226,TMT DUDI,Perusahaan Mitra 8,Garmen Apparel,Menjahit Komponen Pakaian,Rina Marlina,200,2026-09-19,2026-10-08,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+227,TMT-2026-227,TMT DUDI,Perusahaan Mitra 44,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,80,2026-10-28,2026-11-04,Proses,16,16,Ya,Bagus Wicaksono,batch 6
+228,TMT-2026-228,TMT DUDI,Perusahaan Mitra 46,Teknik Manufaktur,Las SMAW,Siti Aminah,140,2026-09-03,2026-09-16,Proses,16,15,Ya,Annisa Fitriani,batch 6
+229,TMT-2026-229,TMT DUDI,Perusahaan Mitra 41,Otomotif,Teknisi AC Mobil,Agus Setiawan,80,2026-08-31,2026-09-07,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+230,TMT-2026-230,TMT DUDI,Perusahaan Mitra 34,Teknologi Informasi (TIK),Network Administrator,Hendra Wijaya,140,2026-09-06,2026-09-19,Proses,16,16,Ya,Fajar Nugraha,batch 6
+231,TMT-2026-231,TMT DUDI,Perusahaan Mitra 26,Bisnis Manajemen,Customer Service,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+232,TMT-2026-232,TMT DUDI,Perusahaan Mitra 38,Teknologi Informasi (TIK),Desain Grafis,Agus Setiawan,160,2026-12-04,2026-12-19,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+233,TMT-2026-233,TMT DUDI,Perusahaan Mitra 16,Teknik Manufaktur,Las SMAW,Budi Santoso,120,2026-12-07,2026-12-18,Proses,16,15,Ya,Rizky Ramadhan,batch 6
+234,TMT-2026-234,TMT DUDI,Perusahaan Mitra 24,Garmen Apparel,Menjahit Komponen Pakaian,Agus Setiawan,200,2026-12-01,2026-12-20,Proses,16,16,Ya,Dinda Maharani,batch 6
+235,TMT-2026-235,TMT DUDI,Perusahaan Mitra 43,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+236,TMT-2026-236,TMT DUDI,Perusahaan Mitra 36,Pariwisata,Tour Guide,Budi Santoso,120,2026-09-22,2026-10-03,Proses,16,16,Tidak,Bagus Wicaksono,batch 6
+237,TMT-2026-237,TMT DUDI,Perusahaan Mitra 36,Garmen Apparel,Fashion Technology,Rina Marlina,240,2026-12-01,2026-12-24,Proses,16,16,Tidak,Dinda Maharani,batch 7
+238,TMT-2026-238,TMT DUDI,Perusahaan Mitra 49,Bisnis Manajemen,Administrasi Perkantoran,Agus Setiawan,80,2026-09-08,2026-09-15,Rencana,16,0,Ya,Bagus Wicaksono,batch 5
+239,TMT-2026-239,TMT DUDI,Perusahaan Mitra 30,Otomotif,Teknisi AC Mobil,Hendra Wijaya,140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Fajar Nugraha,batch 7
+240,TMT-2026-240,TMT DUDI,Perusahaan Mitra 14,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,160,2026-12-01,2026-12-16,Proses,16,16,Ya,Fajar Nugraha,batch 7
+241,TMT-2026-241,TMT DUDI,Perusahaan Mitra 25,Bisnis Manajemen,Customer Service,Siti Aminah,100,2026-10-16,2026-10-25,Proses,16,16,Ya,Bagus Wicaksono,batch 6
+242,TMT-2026-242,TMT DUDI,Perusahaan Mitra 6,Garmen Apparel,Menjahit Komponen Pakaian,Rina Marlina,100,2026-11-21,2026-11-30,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+243,TMT-2026-243,TMT DUDI,Perusahaan Mitra 26,Teknik Manufaktur,Operator Mesin Bubut,Rina Marlina,100,2026-08-13,2026-08-22,Proses,16,15,Ya,Bagus Wicaksono,batch 4
+244,TMT-2026-244,TMT DUDI,Perusahaan Mitra 10,Garmen Apparel,Menjahit Komponen Pakaian,Agus Setiawan,80,2026-11-18,2026-11-25,Rencana,16,0,Ya,Dinda Maharani,batch 7
+245,TMT-2026-245,TMT DUDI,Perusahaan Mitra 46,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,100,2026-12-09,2026-12-18,Rencana,16,0,Ya,Rizky Ramadhan,non-batch
+246,TMT-2026-246,TMT DUDI,Perusahaan Mitra 50,Teknik Manufaktur,Las SMAW,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+247,TMT-2026-247,TMT DUDI,Perusahaan Mitra 4,Bisnis Manajemen,Customer Service,Rina Marlina,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Rizky Ramadhan,batch 7
+248,TMT-2026-248,TMT DUDI,Perusahaan Mitra 47,Garmen Apparel,Fashion Technology,Agus Setiawan,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+249,TMT-2026-249,TMT DUDI,Perusahaan Mitra 10,Otomotif,Teknisi AC Mobil,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Dinda Maharani,batch 6
+250,TMT-2026-250,TMT DUDI,Perusahaan Mitra 48,Otomotif,Teknisi AC Mobil,Rina Marlina,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Rizky Ramadhan,batch 7
+251,TMT-2026-251,TMT DUDI,Perusahaan Mitra 13,Bisnis Manajemen,Digital Marketing,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+252,TMT-2026-252,TMT DUDI,Perusahaan Mitra 25,Otomotif,Mekanik Sepeda Motor,Siti Aminah,140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Bagus Wicaksono,batch 6
+253,TMT-2026-253,TMT DUDI,Perusahaan Mitra 14,Teknologi Informasi (TIK),Network Administrator,Siti Aminah,80,2026-09-17,2026-09-24,Proses,16,15,Ya,Bagus Wicaksono,non-batch
+254,TMT-2026-254,TMT DUDI,Perusahaan Mitra 11,Bisnis Manajemen,Customer Service,Budi Santoso,160,2026-12-01,2026-12-16,Proses,16,15,Ya,Bagus Wicaksono,non-batch
+255,TMT-2026-255,TMT DUDI,Perusahaan Mitra 24,Otomotif,Mekanik Sepeda Motor,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+256,TMT-2026-256,TMT DUDI,Perusahaan Mitra 8,Teknologi Informasi (TIK),Web Development,Agus Setiawan,240,2026-12-01,2026-12-24,Proses,16,15,Tidak,Fajar Nugraha,batch 6
+257,TMT-2026-257,TMT DUDI,Perusahaan Mitra 4,Pariwisata,Tour Guide,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+258,TMT-2026-258,TMT DUDI,Perusahaan Mitra 30,Teknik Manufaktur,Las SMAW,Rina Marlina,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+259,TMT-2026-259,TMT DUDI,Perusahaan Mitra 25,Garmen Apparel,Fashion Technology,Agus Setiawan,100,2026-12-01,2026-12-10,Proses,16,15,Tidak,Dinda Maharani,batch 7
+260,TMT-2026-260,TMT DUDI,Perusahaan Mitra 43,Otomotif,Teknisi AC Mobil,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+261,TMT-2026-261,TMT DUDI,Perusahaan Mitra 6,Garmen Apparel,Menjahit Komponen Pakaian,Agus Setiawan,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+262,TMT-2026-262,TMT DUDI,Perusahaan Mitra 8,Garmen Apparel,Menjahit Komponen Pakaian,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+263,TMT-2026-263,TMT DUDI,Perusahaan Mitra 21,Bisnis Manajemen,Digital Marketing,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+264,TMT-2026-264,TMT DUDI,Perusahaan Mitra 32,Teknologi Informasi (TIK),Web Development,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Fajar Nugraha,non-batch
+265,TMT-2026-265,TMT DUDI,Perusahaan Mitra 25,Teknologi Informasi (TIK),Network Administrator,Agus Setiawan,160,2026-12-01,2026-12-16,Proses,16,15,Tidak,Fajar Nugraha,batch 6
+266,TMT-2026-266,TMT DUDI,Perusahaan Mitra 10,Bisnis Manajemen,Administrasi Perkantoran,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+267,TMT-2026-267,TMT DUDI,Perusahaan Mitra 17,Teknik Manufaktur,Operator Mesin Bubut,Rina Marlina,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Annisa Fitriani,non-batch
+268,TMT-2026-268,TMT DUDI,Perusahaan Mitra 15,Garmen Apparel,Fashion Technology,Hendra Wijaya,80,2026-09-20,2026-09-27,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+269,TMT-2026-269,TMT DUDI,Perusahaan Mitra 3,Pariwisata,Barista,Agus Setiawan,200,2026-12-01,2026-12-20,Proses,16,16,Ya,Annisa Fitriani,batch 6
+270,TMT-2026-270,TMT DUDI,Perusahaan Mitra 29,Teknik Manufaktur,Operator Mesin Bubut,Rina Marlina,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Dinda Maharani,batch 7
+271,TMT-2026-271,TMT DUDI,Perusahaan Mitra 46,Pariwisata,Tour Guide,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+272,TMT-2026-272,TMT DUDI,Perusahaan Mitra 6,Bisnis Manajemen,Administrasi Perkantoran,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Dinda Maharani,batch 6
+273,TMT-2026-273,TMT DUDI,Perusahaan Mitra 43,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,120,2026-12-01,2026-12-12,Proses,16,16,Tidak,Rizky Ramadhan,batch 7
+274,TMT-2026-274,TMT DUDI,Perusahaan Mitra 10,Pariwisata,Barista,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+275,TMT-2026-275,TMT DUDI,Perusahaan Mitra 47,Teknik Manufaktur,Las SMAW,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+276,TMT-2026-276,TMT DUDI,Perusahaan Mitra 44,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Rizky Ramadhan,batch 7
+277,TMT-2026-277,TMT DUDI,Perusahaan Mitra 46,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+278,TMT-2026-278,TMT DUDI,Perusahaan Mitra 24,Otomotif,Mekanik Sepeda Motor,Rina Marlina,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Dinda Maharani,batch 6
+279,TMT-2026-279,TMT DUDI,Perusahaan Mitra 44,Pariwisata,Tour Guide,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+280,TMT-2026-280,TMT DUDI,Perusahaan Mitra 50,Garmen Apparel,Menjahit Komponen Pakaian,-,200,2026-08-16,2026-09-04,Batal,16,0,Tidak,Annisa Fitriani,batch 4
+281,TMT-2026-281,TMT DUDI,Perusahaan Mitra 1,Bisnis Manajemen,Administrasi Perkantoran,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+282,TMT-2026-282,TMT DUDI,Perusahaan Mitra 28,Pariwisata,Housekeeping,Agus Setiawan,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+283,TMT-2026-283,TMT DUDI,Perusahaan Mitra 14,Teknik Manufaktur,Operator Mesin Bubut,Agus Setiawan,140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Fajar Nugraha,batch 6
+284,TMT-2026-284,TMT DUDI,Perusahaan Mitra 40,Pariwisata,Barista,Rina Marlina,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+285,TMT-2026-285,TMT DUDI,Perusahaan Mitra 40,Pariwisata,Barista,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+286,TMT-2026-286,TMT DUDI,Perusahaan Mitra 34,Teknik Manufaktur,Las SMAW,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Bagus Wicaksono,non-batch
+287,TMT-2026-287,TMT DUDI,Perusahaan Mitra 47,Teknologi Informasi (TIK),Network Administrator,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+288,TMT-2026-288,TMT DUDI,Perusahaan Mitra 21,Teknologi Informasi (TIK),Desain Grafis,Budi Santoso,80,2026-10-18,2026-10-25,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+289,TMT-2026-289,TMT DUDI,Perusahaan Mitra 43,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+290,TMT-2026-290,TMT DUDI,Perusahaan Mitra 34,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+291,TMT-2026-291,TMT DUDI,Perusahaan Mitra 3,Garmen Apparel,Fashion Technology,Siti Aminah,140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Fajar Nugraha,batch 7
+292,TMT-2026-292,TMT DUDI,Perusahaan Mitra 23,Teknologi Informasi (TIK),Network Administrator,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+293,TMT-2026-293,TMT DUDI,Perusahaan Mitra 18,Teknologi Informasi (TIK),Network Administrator,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+294,TMT-2026-294,TMT DUDI,Perusahaan Mitra 38,Teknologi Informasi (TIK),Network Administrator,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+295,TMT-2026-295,TMT DUDI,Perusahaan Mitra 15,Garmen Apparel,Fashion Technology,Rina Marlina,80,2026-12-01,2026-12-08,Proses,16,15,Ya,Fajar Nugraha,batch 6
+296,TMT-2026-296,TMT DUDI,Perusahaan Mitra 13,Garmen Apparel,Menjahit Komponen Pakaian,-,160,2026-11-03,2026-11-18,Batal,16,0,Ya,Dinda Maharani,non-batch
+297,TMT-2026-297,TMT DUDI,Perusahaan Mitra 37,Otomotif,Mekanik Sepeda Motor,Rina Marlina,160,2026-12-01,2026-12-16,Proses,16,15,Ya,Bagus Wicaksono,non-batch
+298,TMT-2026-298,TMT DUDI,Perusahaan Mitra 9,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+299,TMT-2026-299,TMT DUDI,Perusahaan Mitra 7,Pariwisata,Tour Guide,-,200,2026-10-04,2026-10-23,Batal,16,0,Tidak,Dinda Maharani,batch 6
+300,TMT-2026-300,TMT DUDI,Perusahaan Mitra 24,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Dinda Maharani,batch 7
+301,TMT-2026-301,TMT DUDI,Perusahaan Mitra 17,Teknik Manufaktur,Las SMAW,Siti Aminah,240,2026-12-01,2026-12-24,Proses,16,16,Tidak,Bagus Wicaksono,batch 6
+302,TMT-2026-302,TMT DUDI,Perusahaan Mitra 33,Garmen Apparel,Fashion Technology,Hendra Wijaya,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+303,TMT-2026-303,TMT DUDI,Perusahaan Mitra 26,Pariwisata,Housekeeping,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+304,TMT-2026-304,TMT DUDI,Perusahaan Mitra 13,Teknologi Informasi (TIK),Web Development,Siti Aminah,140,2026-12-01,2026-12-14,Proses,16,15,Ya,Bagus Wicaksono,non-batch
+305,TMT-2026-305,TMT DUDI,Perusahaan Mitra 24,Teknologi Informasi (TIK),Network Administrator,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+306,TMT-2026-306,TMT DUDI,Perusahaan Mitra 35,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Dinda Maharani,batch 6
+307,TMT-2026-307,TMT DUDI,Perusahaan Mitra 32,Garmen Apparel,Menjahit Komponen Pakaian,Rina Marlina,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+308,TMT-2026-308,TMT DUDI,Perusahaan Mitra 7,Pariwisata,Barista,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+309,TMT-2026-309,TMT DUDI,Perusahaan Mitra 48,Teknologi Informasi (TIK),Web Development,Agus Setiawan,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Bagus Wicaksono,batch 7
+310,TMT-2026-310,TMT DUDI,Perusahaan Mitra 36,Otomotif,Teknisi AC Mobil,Agus Setiawan,80,2026-12-01,2026-12-08,Proses,16,16,Ya,Bagus Wicaksono,batch 7
+311,TMT-2026-311,TMT DUDI,Perusahaan Mitra 39,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,120,2026-12-01,2026-12-12,Proses,16,15,Tidak,Fajar Nugraha,batch 6
+312,TMT-2026-312,TMT DUDI,Perusahaan Mitra 29,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+313,TMT-2026-313,TMT DUDI,Perusahaan Mitra 38,Pariwisata,Barista,Rina Marlina,100,2026-12-01,2026-12-10,Proses,16,15,Ya,Fajar Nugraha,batch 7
+314,TMT-2026-314,TMT DUDI,Perusahaan Mitra 2,Otomotif,Mekanik Sepeda Motor,Siti Aminah,240,2026-12-01,2026-12-24,Proses,16,16,Ya,Fajar Nugraha,batch 7
+315,TMT-2026-315,TMT DUDI,Perusahaan Mitra 26,Pariwisata,Barista,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+316,TMT-2026-316,TMT DUDI,Perusahaan Mitra 45,Teknik Manufaktur,Operator Mesin Bubut,Hendra Wijaya,160,2026-12-01,2026-12-16,Proses,16,16,Ya,Bagus Wicaksono,batch 7
+317,TMT-2026-317,TMT DUDI,Perusahaan Mitra 40,Pariwisata,Tour Guide,Rina Marlina,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+318,TMT-2026-318,TMT DUDI,Perusahaan Mitra 36,Teknologi Informasi (TIK),Network Administrator,Rina Marlina,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Rizky Ramadhan,batch 7
+319,TMT-2026-319,TMT DUDI,Perusahaan Mitra 44,Teknologi Informasi (TIK),Network Administrator,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+320,TMT-2026-320,TMT DUDI,Perusahaan Mitra 47,Pariwisata,Housekeeping,Agus Setiawan,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Dinda Maharani,non-batch
+321,TMT-2026-321,TMT DUDI,Perusahaan Mitra 31,Bisnis Manajemen,Customer Service,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+322,TMT-2026-322,TMT DUDI,Perusahaan Mitra 26,Bisnis Manajemen,Administrasi Perkantoran,-,120,2026-10-14,2026-10-25,Batal,16,0,Tidak,Bagus Wicaksono,batch 6
+323,TMT-2026-323,TMT DUDI,Perusahaan Mitra 21,Teknik Manufaktur,Operator Mesin Bubut,Siti Aminah,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+324,TMT-2026-324,TMT DUDI,Perusahaan Mitra 4,Bisnis Manajemen,Digital Marketing,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+325,TMT-2026-325,TMT DUDI,Perusahaan Mitra 27,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,80,2026-12-01,2026-12-08,Proses,16,16,Ya,Rizky Ramadhan,non-batch
+326,TMT-2026-326,TMT DUDI,Perusahaan Mitra 6,Garmen Apparel,Fashion Technology,Agus Setiawan,100,2026-12-01,2026-12-10,Proses,16,16,Ya,Annisa Fitriani,batch 7
+327,TMT-2026-327,TMT DUDI,Perusahaan Mitra 14,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+328,TMT-2026-328,TMT DUDI,Perusahaan Mitra 41,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+329,TMT-2026-329,TMT DUDI,Perusahaan Mitra 22,Otomotif,Mekanik Sepeda Motor,Rina Marlina,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+330,TMT-2026-330,TMT DUDI,Perusahaan Mitra 41,Bisnis Manajemen,Customer Service,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+331,TMT-2026-331,TMT DUDI,Perusahaan Mitra 48,Bisnis Manajemen,Customer Service,Rina Marlina,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Dinda Maharani,non-batch
+332,TMT-2026-332,TMT DUDI,Perusahaan Mitra 14,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+333,TMT-2026-333,TMT DUDI,Perusahaan Mitra 37,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,140,2026-12-01,2026-12-14,Proses,16,16,Ya,Dinda Maharani,batch 7
+334,TMT-2026-334,TMT DUDI,Perusahaan Mitra 48,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,200,2026-12-01,2026-12-20,Proses,16,15,Ya,Rizky Ramadhan,batch 6
+335,TMT-2026-335,TMT DUDI,Perusahaan Mitra 19,Teknik Manufaktur,Operator Mesin Bubut,Agus Setiawan,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+336,TMT-2026-336,TMT DUDI,Perusahaan Mitra 19,Garmen Apparel,Menjahit Komponen Pakaian,-,80,2026-08-28,2026-09-04,Batal,16,0,Ya,Annisa Fitriani,batch 5
+337,TMT-2026-337,TMT DUDI,Perusahaan Mitra 8,Otomotif,Mekanik Sepeda Motor,Budi Santoso,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Annisa Fitriani,batch 7
+338,TMT-2026-338,TMT DUDI,Perusahaan Mitra 16,Bisnis Manajemen,Digital Marketing,Agus Setiawan,200,2026-12-01,2026-12-20,Proses,16,15,Tidak,Bagus Wicaksono,batch 6
+339,TMT-2026-339,TMT DUDI,Perusahaan Mitra 3,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Dinda Maharani,batch 6
+340,TMT-2026-340,TMT DUDI,Perusahaan Mitra 28,Otomotif,Teknisi AC Mobil,Budi Santoso,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Dinda Maharani,batch 7
+341,TMT-2026-341,TMT DUDI,Perusahaan Mitra 12,Pariwisata,Barista,Siti Aminah,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Dinda Maharani,batch 6
+342,TMT-2026-342,TMT DUDI,Perusahaan Mitra 35,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Dinda Maharani,batch 6
+343,TMT-2026-343,TMT DUDI,Perusahaan Mitra 18,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+344,TMT-2026-344,TMT DUDI,Perusahaan Mitra 49,Otomotif,Teknisi AC Mobil,Agus Setiawan,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Dinda Maharani,non-batch
+345,TMT-2026-345,TMT DUDI,Perusahaan Mitra 4,Bisnis Manajemen,Customer Service,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+346,TMT-2026-346,TMT DUDI,Perusahaan Mitra 49,Garmen Apparel,Fashion Technology,-,100,2026-11-15,2026-11-24,Batal,16,0,Tidak,Bagus Wicaksono,batch 6
+347,TMT-2026-347,TMT DUDI,Perusahaan Mitra 22,Teknik Manufaktur,Las SMAW,Rina Marlina,100,2026-12-01,2026-12-10,Proses,16,15,Ya,Annisa Fitriani,batch 7
+348,TMT-2026-348,TMT DUDI,Perusahaan Mitra 4,Pariwisata,Housekeeping,Hendra Wijaya,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+349,TMT-2026-349,TMT DUDI,Perusahaan Mitra 18,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Dinda Maharani,batch 6
+350,TMT-2026-350,TMT DUDI,Perusahaan Mitra 42,Teknik Manufaktur,Operator Mesin Bubut,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+351,TMT-2026-351,TMT DUDI,Perusahaan Mitra 22,Bisnis Manajemen,Customer Service,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+352,TMT-2026-352,TMT DUDI,Perusahaan Mitra 15,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+353,TMT-2026-353,TMT DUDI,Perusahaan Mitra 22,Pariwisata,Tour Guide,Budi Santoso,140,2026-12-01,2026-12-14,Proses,16,16,Ya,Fajar Nugraha,batch 7
+354,TMT-2026-354,TMT DUDI,Perusahaan Mitra 5,Otomotif,Teknisi AC Mobil,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+355,TMT-2026-355,TMT DUDI,Perusahaan Mitra 15,Pariwisata,Barista,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+356,TMT-2026-356,TMT DUDI,Perusahaan Mitra 45,Teknologi Informasi (TIK),Desain Grafis,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+357,TMT-2026-357,TMT DUDI,Perusahaan Mitra 42,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+358,TMT-2026-358,TMT DUDI,Perusahaan Mitra 39,Bisnis Manajemen,Digital Marketing,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Rizky Ramadhan,batch 7
+359,TMT-2026-359,TMT DUDI,Perusahaan Mitra 23,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,240,2026-12-01,2026-12-24,Proses,16,16,Ya,Bagus Wicaksono,non-batch
+360,TMT-2026-360,TMT DUDI,Perusahaan Mitra 7,Pariwisata,Housekeeping,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+361,TMT-2026-361,TMT DUDI,Perusahaan Mitra 13,Bisnis Manajemen,Digital Marketing,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,batch 7
+362,TMT-2026-362,TMT DUDI,Perusahaan Mitra 12,Bisnis Manajemen,Customer Service,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+363,TMT-2026-363,TMT DUDI,Perusahaan Mitra 25,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,80,2026-12-01,2026-12-08,Proses,16,16,Tidak,Dinda Maharani,batch 6
+364,TMT-2026-364,TMT DUDI,Perusahaan Mitra 44,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+365,TMT-2026-365,TMT DUDI,Perusahaan Mitra 11,Bisnis Manajemen,Administrasi Perkantoran,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+366,TMT-2026-366,TMT DUDI,Perusahaan Mitra 11,Bisnis Manajemen,Administrasi Perkantoran,Agus Setiawan,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+367,TMT-2026-367,TMT DUDI,Perusahaan Mitra 27,Pariwisata,Barista,Rina Marlina,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+368,TMT-2026-368,TMT DUDI,Perusahaan Mitra 41,Bisnis Manajemen,Administrasi Perkantoran,Agus Setiawan,100,2026-12-01,2026-12-10,Proses,16,16,Ya,Rizky Ramadhan,batch 7
+369,TMT-2026-369,TMT DUDI,Perusahaan Mitra 12,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+370,TMT-2026-370,TMT DUDI,Perusahaan Mitra 25,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+371,TMT-2026-371,TMT DUDI,Perusahaan Mitra 3,Bisnis Manajemen,Customer Service,Budi Santoso,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+372,TMT-2026-372,TMT DUDI,Perusahaan Mitra 36,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+373,TMT-2026-373,TMT DUDI,Perusahaan Mitra 3,Garmen Apparel,Fashion Technology,Hendra Wijaya,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Bagus Wicaksono,non-batch
+374,TMT-2026-374,TMT DUDI,Perusahaan Mitra 1,Otomotif,Mekanik Sepeda Motor,Rina Marlina,140,2026-12-01,2026-12-14,Proses,16,16,Tidak,Annisa Fitriani,batch 7
+375,TMT-2026-375,TMT DUDI,Perusahaan Mitra 10,Pariwisata,Tour Guide,Siti Aminah,100,2026-12-01,2026-12-10,Proses,16,16,Ya,Annisa Fitriani,batch 7
+376,TMT-2026-376,TMT DUDI,Perusahaan Mitra 17,Pariwisata,Housekeeping,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+377,TMT-2026-377,TMT DUDI,Perusahaan Mitra 15,Bisnis Manajemen,Administrasi Perkantoran,Budi Santoso,160,2026-12-01,2026-12-16,Proses,16,16,Ya,Rizky Ramadhan,batch 7
+378,TMT-2026-378,TMT DUDI,Perusahaan Mitra 2,Pariwisata,Barista,Agus Setiawan,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+379,TMT-2026-379,TMT DUDI,Perusahaan Mitra 43,Bisnis Manajemen,Administrasi Perkantoran,Hendra Wijaya,140,2026-12-01,2026-12-14,Proses,16,16,Ya,Dinda Maharani,non-batch
+380,TMT-2026-380,TMT DUDI,Perusahaan Mitra 26,Bisnis Manajemen,Digital Marketing,Siti Aminah,120,2026-12-01,2026-12-12,Proses,16,15,Ya,Bagus Wicaksono,batch 7
+381,TMT-2026-381,TMT DUDI,Perusahaan Mitra 44,Otomotif,Teknisi AC Mobil,Budi Santoso,200,2026-12-01,2026-12-20,Proses,16,16,Ya,Bagus Wicaksono,batch 6
+382,TMT-2026-382,TMT DUDI,Perusahaan Mitra 3,Otomotif,Mekanik Sepeda Motor,Budi Santoso,100,2026-12-01,2026-12-10,Proses,16,16,Ya,Dinda Maharani,batch 7
+383,TMT-2026-383,TMT DUDI,Perusahaan Mitra 10,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,160,2026-12-01,2026-12-16,Proses,16,15,Ya,Bagus Wicaksono,batch 7
+384,TMT-2026-384,TMT DUDI,Perusahaan Mitra 5,Garmen Apparel,Fashion Technology,-,240,2026-10-09,2026-11-01,Batal,16,0,Ya,Annisa Fitriani,batch 6
+385,TMT-2026-385,TMT DUDI,Perusahaan Mitra 29,Teknologi Informasi (TIK),Web Development,Budi Santoso,80,2026-12-01,2026-12-08,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+386,TMT-2026-386,TMT DUDI,Perusahaan Mitra 47,Otomotif,Mekanik Sepeda Motor,Hendra Wijaya,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,batch 6
+387,TMT-2026-387,TMT DUDI,Perusahaan Mitra 27,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+388,TMT-2026-388,TMT DUDI,Perusahaan Mitra 45,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+389,TMT-2026-389,TMT DUDI,Perusahaan Mitra 16,Bisnis Manajemen,Customer Service,Hendra Wijaya,120,2026-12-01,2026-12-12,Proses,16,16,Tidak,Rizky Ramadhan,non-batch
+390,TMT-2026-390,TMT DUDI,Perusahaan Mitra 16,Teknologi Informasi (TIK),Desain Grafis,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+391,TMT-2026-391,TMT DUDI,Perusahaan Mitra 4,Otomotif,Mekanik Sepeda Motor,Siti Aminah,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+392,TMT-2026-392,TMT DUDI,Perusahaan Mitra 21,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+393,TMT-2026-393,TMT DUDI,Perusahaan Mitra 1,Pariwisata,Housekeeping,Hendra Wijaya,240,2026-12-01,2026-12-24,Proses,16,16,Ya,Rizky Ramadhan,batch 6
+394,TMT-2026-394,TMT DUDI,Perusahaan Mitra 34,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Dinda Maharani,batch 6
+395,TMT-2026-395,TMT DUDI,Perusahaan Mitra 49,Garmen Apparel,Fashion Technology,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Dinda Maharani,non-batch
+396,TMT-2026-396,TMT DUDI,Perusahaan Mitra 35,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+397,TMT-2026-397,TMT DUDI,Perusahaan Mitra 38,Pariwisata,Barista,Hendra Wijaya,80,2026-12-01,2026-12-08,Proses,16,16,Ya,Fajar Nugraha,batch 6
+398,TMT-2026-398,TMT DUDI,Perusahaan Mitra 28,Otomotif,Teknisi AC Mobil,Rina Marlina,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+399,TMT-2026-399,TMT DUDI,Perusahaan Mitra 33,Pariwisata,Barista,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+400,TMT-2026-400,TMT DUDI,Perusahaan Mitra 37,Pariwisata,Tour Guide,Hendra Wijaya,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+401,TMT-2026-401,TMT DUDI,Perusahaan Mitra 6,Teknik Manufaktur,Las SMAW,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,non-batch
+402,TMT-2026-402,TMT DUDI,Perusahaan Mitra 21,Otomotif,Teknisi AC Mobil,Agus Setiawan,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+403,TMT-2026-403,TMT DUDI,Perusahaan Mitra 9,Garmen Apparel,Fashion Technology,Siti Aminah,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Rizky Ramadhan,non-batch
+404,TMT-2026-404,TMT DUDI,Perusahaan Mitra 40,Teknologi Informasi (TIK),Desain Grafis,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+405,LPKS-2026-405,LPKS,Perusahaan Mitra 6,Teknologi Informasi (TIK),Desain Grafis,Rina Marlina,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Rizky Ramadhan,batch 6
+406,LPKS-2026-406,LPKS,Perusahaan Mitra 13,Pariwisata,Barista,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+407,LPKS-2026-407,LPKS,Perusahaan Mitra 3,Otomotif,Teknisi AC Mobil,Hendra Wijaya,100,2026-12-01,2026-12-10,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+408,LPKS-2026-408,LPKS,Perusahaan Mitra 21,Teknologi Informasi (TIK),Network Administrator,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+409,LPKS-2026-409,LPKS,Perusahaan Mitra 15,Garmen Apparel,Fashion Technology,Agus Setiawan,140,2026-12-01,2026-12-14,Proses,16,15,Tidak,Annisa Fitriani,batch 7
+410,LPKS-2026-410,LPKS,Perusahaan Mitra 9,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+411,LPKS-2026-411,LPKS,Perusahaan Mitra 45,Bisnis Manajemen,Digital Marketing,Rina Marlina,120,2026-12-01,2026-12-12,Proses,16,15,Ya,Dinda Maharani,batch 6
+412,LPKS-2026-412,LPKS,Perusahaan Mitra 9,Bisnis Manajemen,Digital Marketing,Budi Santoso,240,2026-12-01,2026-12-24,Proses,16,16,Ya,Rizky Ramadhan,batch 7
+413,LPKS-2026-413,LPKS,Perusahaan Mitra 19,Pariwisata,Housekeeping,Hendra Wijaya,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+414,LPKS-2026-414,LPKS,Perusahaan Mitra 22,Bisnis Manajemen,Digital Marketing,Budi Santoso,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+415,LPKS-2026-415,LPKS,Perusahaan Mitra 18,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,80,2026-12-01,2026-12-08,Proses,16,16,Tidak,Rizky Ramadhan,batch 6
+416,LPKS-2026-416,LPKS,Perusahaan Mitra 37,Teknologi Informasi (TIK),Desain Grafis,Budi Santoso,80,2026-12-01,2026-12-08,Proses,16,16,Tidak,Fajar Nugraha,batch 6
+417,LPKS-2026-417,LPKS,Perusahaan Mitra 47,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,200,2026-12-01,2026-12-20,Proses,16,16,Tidak,Annisa Fitriani,batch 6
+418,LPKS-2026-418,LPKS,Perusahaan Mitra 44,Otomotif,Teknisi AC Mobil,Budi Santoso,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Dinda Maharani,batch 6
+419,LPKS-2026-419,LPKS,Perusahaan Mitra 18,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+420,LPKS-2026-420,LPKS,Perusahaan Mitra 22,Garmen Apparel,Fashion Technology,Agus Setiawan,160,2026-12-01,2026-12-16,Proses,16,15,Tidak,Bagus Wicaksono,non-batch
+421,LPKS-2026-421,LPKS,Perusahaan Mitra 26,Otomotif,Teknisi AC Mobil,Budi Santoso,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,non-batch
+422,LPKS-2026-422,LPKS,Perusahaan Mitra 28,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+423,LPKS-2026-423,LPKS,Perusahaan Mitra 33,Pariwisata,Barista,Siti Aminah,100,2026-12-01,2026-12-10,Proses,16,16,Tidak,Bagus Wicaksono,non-batch
+424,LPKS-2026-424,LPKS,Perusahaan Mitra 4,Pariwisata,Housekeeping,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Fajar Nugraha,non-batch
+425,LPKS-2026-425,LPKS,Perusahaan Mitra 40,Teknologi Informasi (TIK),Desain Grafis,Hendra Wijaya,120,2026-12-01,2026-12-12,Proses,16,16,Ya,Dinda Maharani,non-batch
+426,LPKS-2026-426,LPKS,Perusahaan Mitra 11,Garmen Apparel,Menjahit Komponen Pakaian,Agus Setiawan,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+427,LPKS-2026-427,LPKS,Perusahaan Mitra 26,Teknologi Informasi (TIK),Network Administrator,Agus Setiawan,140,2026-12-01,2026-12-14,Proses,16,15,Ya,Bagus Wicaksono,batch 6
+428,LPKS-2026-428,LPKS,Perusahaan Mitra 8,Teknik Manufaktur,Operator Mesin Bubut,Siti Aminah,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Bagus Wicaksono,non-batch
+429,LPKS-2026-429,LPKS,Perusahaan Mitra 46,Teknik Manufaktur,Operator Mesin Bubut,Hendra Wijaya,100,2026-12-01,2026-12-10,Proses,16,15,Ya,Rizky Ramadhan,batch 6
+430,LPKS-2026-430,LPKS,Perusahaan Mitra 18,Teknik Manufaktur,Las SMAW,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Dinda Maharani,batch 6
+431,LPKS-2026-431,LPKS,Perusahaan Mitra 2,Otomotif,Teknisi AC Mobil,Rina Marlina,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+432,LPKS-2026-432,LPKS,Perusahaan Mitra 11,Teknik Manufaktur,Operator Mesin Bubut,Rina Marlina,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+433,LPKS-2026-433,LPKS,Perusahaan Mitra 10,Pariwisata,Tour Guide,Hendra Wijaya,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,batch 6
+434,BLKK-2026-434,BLKK,Perusahaan Mitra 5,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+435,BLKK-2026-435,BLKK,Perusahaan Mitra 18,Teknologi Informasi (TIK),Web Development,Agus Setiawan,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+436,BLKK-2026-436,BLKK,Perusahaan Mitra 42,Otomotif,Teknisi AC Mobil,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Annisa Fitriani,non-batch
+437,BLKK-2026-437,BLKK,Perusahaan Mitra 50,Otomotif,Mekanik Sepeda Motor,Siti Aminah,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Bagus Wicaksono,batch 6
+438,BLKK-2026-438,BLKK,Perusahaan Mitra 24,Pariwisata,Barista,Hendra Wijaya,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+439,BLKK-2026-439,BLKK,Perusahaan Mitra 9,Teknik Manufaktur,Las SMAW,Agus Setiawan,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Annisa Fitriani,batch 6
+440,BLKK-2026-440,BLKK,Perusahaan Mitra 1,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,160,2026-12-01,2026-12-16,Proses,16,16,Tidak,Rizky Ramadhan,batch 6
+441,BLKK-2026-441,BLKK,Perusahaan Mitra 35,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+442,BLKK-2026-442,BLKK,Perusahaan Mitra 30,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+443,BLKK-2026-443,BLKK,Perusahaan Mitra 23,Bisnis Manajemen,Administrasi Perkantoran,Rina Marlina,100,2026-12-01,2026-12-10,Proses,16,15,Ya,Fajar Nugraha,batch 7
+444,BLKK-2026-444,BLKK,Perusahaan Mitra 45,Garmen Apparel,Fashion Technology,-,100,2026-10-25,2026-11-03,Batal,16,0,Ya,Bagus Wicaksono,batch 6
+445,BLKK-2026-445,BLKK,Perusahaan Mitra 28,Garmen Apparel,Fashion Technology,Rina Marlina,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+446,BLKK-2026-446,BLKK,Perusahaan Mitra 31,Pariwisata,Tour Guide,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+447,BLKK-2026-447,BLKK,Perusahaan Mitra 38,Otomotif,Mekanik Sepeda Motor,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+448,BLKK-2026-448,BLKK,Perusahaan Mitra 37,Otomotif,Mekanik Sepeda Motor,Agus Setiawan,240,2026-12-01,2026-12-24,Proses,16,16,Tidak,Annisa Fitriani,batch 7
+449,BLKK-2026-449,BLKK,Perusahaan Mitra 6,Bisnis Manajemen,Customer Service,Siti Aminah,240,2026-12-01,2026-12-24,Proses,16,15,Ya,Fajar Nugraha,batch 6
+450,BLKK-2026-450,BLKK,Perusahaan Mitra 45,Teknik Manufaktur,Las SMAW,Budi Santoso,140,2026-12-01,2026-12-14,Proses,16,15,Ya,Bagus Wicaksono,batch 7
+451,BLKK-2026-451,BLKK,Perusahaan Mitra 39,Garmen Apparel,Fashion Technology,Rina Marlina,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Dinda Maharani,batch 7
+452,BLKK-2026-452,BLKK,Perusahaan Mitra 8,Teknik Manufaktur,Operator Mesin Bubut,Hendra Wijaya,200,2026-12-01,2026-12-20,Proses,16,16,Tidak,Annisa Fitriani,batch 7
+453,BLKK-2026-453,BLKK,Perusahaan Mitra 2,Teknik Manufaktur,Las SMAW,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,batch 6
+454,BLKK-2026-454,BLKK,Perusahaan Mitra 48,Teknik Manufaktur,Operator Mesin Bubut,Rina Marlina,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+455,BLKK-2026-455,BLKK,Perusahaan Mitra 26,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Bagus Wicaksono,non-batch
+456,BLKK-2026-456,BLKK,Perusahaan Mitra 35,Bisnis Manajemen,Administrasi Perkantoran,Siti Aminah,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+457,BLKK-2026-457,BLKK,Perusahaan Mitra 16,Teknologi Informasi (TIK),Web Development,Agus Setiawan,200,2026-12-01,2026-12-20,Proses,16,15,Ya,Annisa Fitriani,batch 7
+458,BLKK-2026-458,BLKK,Perusahaan Mitra 3,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+459,BLKK-2026-459,BLKK,Perusahaan Mitra 33,Garmen Apparel,Fashion Technology,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+460,BLKK-2026-460,BLKK,Perusahaan Mitra 27,Teknik Manufaktur,Operator Mesin Bubut,Agus Setiawan,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Dinda Maharani,non-batch
+461,BLKK-2026-461,BLKK,Perusahaan Mitra 16,Bisnis Manajemen,Administrasi Perkantoran,Budi Santoso,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+462,BLKK-2026-462,BLKK,Perusahaan Mitra 33,Otomotif,Teknisi AC Mobil,Agus Setiawan,240,2026-12-01,2026-12-24,Proses,16,15,Tidak,Bagus Wicaksono,batch 6
+463,UPTD-2026-463,UPTD,UPTD BLK Subang,Garmen Apparel,Menjahit Komponen Pakaian,Siti Aminah,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Rizky Ramadhan,non-batch
+464,UPTD-2026-464,UPTD,UPTD BLK Indramayu,Teknologi Informasi (TIK),Web Development,Hendra Wijaya,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+465,UPTD-2026-465,UPTD,UPTD BLK Kab. Cirebon,Pariwisata,Tour Guide,Agus Setiawan,240,2026-12-01,2026-12-24,Proses,16,16,Ya,Bagus Wicaksono,batch 7
+466,UPTD-2026-466,UPTD,UPTD BLK Indramayu,Teknologi Informasi (TIK),Desain Grafis,Budi Santoso,200,2026-12-01,2026-12-20,Proses,16,16,Ya,Annisa Fitriani,non-batch
+467,UPTD-2026-467,UPTD,UPTD BLK Bandung Barat,Otomotif,Mekanik Sepeda Motor,Siti Aminah,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+468,UPTD-2026-468,UPTD,UPTD BLK Subang,Teknik Manufaktur,Operator Mesin Bubut,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+469,UPTD-2026-469,UPTD,UPTD BLK Bandung Barat,Teknik Manufaktur,Las SMAW,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+470,UPTD-2026-470,UPTD,UPTD BLK Kab. Cirebon,Garmen Apparel,Menjahit Komponen Pakaian,Hendra Wijaya,160,2026-12-01,2026-12-16,Rencana,16,0,Tidak,Fajar Nugraha,batch 7
+471,UPTD-2026-471,UPTD,UPTD BLK Kab. Bandung,Teknologi Informasi (TIK),Web Development,Agus Setiawan,100,2026-12-01,2026-12-10,Proses,16,16,Tidak,Dinda Maharani,batch 6
+472,UPTD-2026-472,UPTD,UPTD BLK Kab. Bandung,Teknologi Informasi (TIK),Web Development,Siti Aminah,200,2026-12-01,2026-12-20,Proses,16,16,Ya,Rizky Ramadhan,batch 7
+473,UPTD-2026-473,UPTD,UPTD BLK Indramayu,Pariwisata,Barista,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Ya,Dinda Maharani,batch 6
+474,UPTD-2026-474,UPTD,UPTD BLK Kab. Bandung,Garmen Apparel,Fashion Technology,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Bagus Wicaksono,non-batch
+475,UPTD-2026-475,UPTD,UPTD BLK Indramayu,Otomotif,Teknisi AC Mobil,Siti Aminah,140,2026-12-01,2026-12-14,Proses,16,15,Tidak,Fajar Nugraha,non-batch
+476,UPTD-2026-476,UPTD,UPTD BLK Kab. Cirebon,Teknologi Informasi (TIK),Web Development,Siti Aminah,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+477,UPTD-2026-477,UPTD,UPTD BLK Indramayu,Pariwisata,Housekeeping,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+478,UPTD-2026-478,UPTD,UPTD BLK Kab. Cirebon,Garmen Apparel,Fashion Technology,-,160,2026-09-14,2026-09-29,Batal,16,0,Ya,Fajar Nugraha,batch 5
+479,UPTD-2026-479,UPTD,UPTD BLK Subang,Teknik Manufaktur,Operator Mesin Bubut,Siti Aminah,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+480,UPTD-2026-480,UPTD,UPTD BLK Kab. Cirebon,Pariwisata,Barista,Budi Santoso,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+481,UPTD-2026-481,UPTD,UPTD BLK Kab. Cirebon,Bisnis Manajemen,Customer Service,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Rizky Ramadhan,batch 7
+482,UPTD-2026-482,UPTD,UPTD BLK Kab. Cirebon,Garmen Apparel,Menjahit Komponen Pakaian,Rina Marlina,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Fajar Nugraha,non-batch
+483,UPTD-2026-483,UPTD,UPTD BLK Subang,Bisnis Manajemen,Customer Service,Siti Aminah,140,2026-12-01,2026-12-14,Proses,16,15,Ya,Fajar Nugraha,non-batch
+484,UPTD-2026-484,UPTD,UPTD BLK Bandung Barat,Teknologi Informasi (TIK),Network Administrator,Budi Santoso,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Annisa Fitriani,batch 7
+485,UPTD-2026-485,UPTD,UPTD BLK Indramayu,Bisnis Manajemen,Administrasi Perkantoran,Budi Santoso,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Annisa Fitriani,batch 7
+486,UPTD-2026-486,UPTD,UPTD BLK Subang,Teknologi Informasi (TIK),Web Development,Siti Aminah,240,2026-12-01,2026-12-24,Proses,16,15,Tidak,Fajar Nugraha,batch 6
+487,UPTD-2026-487,UPTD,UPTD BLK Indramayu,Otomotif,Teknisi AC Mobil,Budi Santoso,160,2026-12-01,2026-12-16,Rencana,16,0,Ya,Annisa Fitriani,batch 6
+488,UPTD-2026-488,UPTD,UPTD BLK Indramayu,Bisnis Manajemen,Administrasi Perkantoran,Hendra Wijaya,80,2026-12-01,2026-12-08,Proses,16,16,Tidak,Fajar Nugraha,batch 6
+489,UPTD-2026-489,UPTD,UPTD BLK Kab. Bandung,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,120,2026-12-01,2026-12-12,Proses,16,16,Ya,Fajar Nugraha,batch 7
+490,UPTD-2026-490,UPTD,UPTD BLK Kab. Cirebon,Bisnis Manajemen,Digital Marketing,Budi Santoso,240,2026-12-01,2026-12-24,Rencana,16,0,Ya,Bagus Wicaksono,batch 7
+491,UPTD-2026-491,UPTD,UPTD BLK Kab. Bandung,Teknologi Informasi (TIK),Desain Grafis,Siti Aminah,100,2026-12-01,2026-12-10,Rencana,16,0,Ya,Fajar Nugraha,batch 7
+492,UPTD-2026-492,UPTD,UPTD BLK Bandung Barat,Bisnis Manajemen,Administrasi Perkantoran,Hendra Wijaya,120,2026-12-01,2026-12-12,Rencana,16,0,Tidak,Bagus Wicaksono,batch 7
+493,UPTD-2026-493,UPTD,UPTD BLK Kab. Bandung,Bisnis Manajemen,Digital Marketing,Hendra Wijaya,200,2026-12-01,2026-12-20,Rencana,16,0,Tidak,Dinda Maharani,batch 6
+494,UPTD-2026-494,UPTD,UPTD BLK Kab. Cirebon,Bisnis Manajemen,Administrasi Perkantoran,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Fajar Nugraha,batch 6
+495,UPTD-2026-495,UPTD,UPTD BLK Indramayu,Teknik Manufaktur,Las SMAW,Rina Marlina,120,2026-12-01,2026-12-12,Proses,16,16,Tidak,Dinda Maharani,batch 6
+496,UPTD-2026-496,UPTD,UPTD BLK Indramayu,Bisnis Manajemen,Customer Service,Agus Setiawan,140,2026-12-01,2026-12-14,Rencana,16,0,Ya,Bagus Wicaksono,batch 6
+497,UPTD-2026-497,UPTD,UPTD BLK Indramayu,Teknologi Informasi (TIK),Web Development,Siti Aminah,200,2026-12-01,2026-12-20,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+498,UPTD-2026-498,UPTD,UPTD BLK Bandung Barat,Otomotif,Mekanik Sepeda Motor,Hendra Wijaya,140,2026-12-01,2026-12-14,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+499,UPTD-2026-499,UPTD,UPTD BLK Bandung Barat,Bisnis Manajemen,Customer Service,Hendra Wijaya,80,2026-12-01,2026-12-08,Rencana,16,0,Tidak,Dinda Maharani,batch 7
+500,UPTD-2026-500,UPTD,UPTD BLK Bandung Barat,Pariwisata,Tour Guide,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Rizky Ramadhan,batch 6
+501,UPTD-2026-501,UPTD,UPTD BLK Kab. Bandung,Garmen Apparel,Menjahit Komponen Pakaian,Budi Santoso,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,batch 6
+502,UPTD-2026-502,UPTD,UPTD BLK Subang,Teknik Manufaktur,Operator Mesin Bubut,Agus Setiawan,100,2026-12-01,2026-12-10,Proses,16,15,Tidak,Bagus Wicaksono,non-batch
+503,UPTD-2026-503,UPTD,UPTD BLK Kab. Bandung,Bisnis Manajemen,Customer Service,Agus Setiawan,80,2026-12-01,2026-12-08,Rencana,16,0,Ya,Dinda Maharani,batch 6
+504,PROD-2026-504,Produktivitas,Perusahaan Mitra 38,Produktivitas,Peningkatan Produktivitas Perusahaan,Rina Marlina,200,2026-12-01,2026-12-20,Proses,25,24,Tidak,Rizky Ramadhan,batch 6
+505,PROD-2026-505,Produktivitas,Perusahaan Mitra 15,Produktivitas,Peningkatan Produktivitas Perusahaan,Budi Santoso,120,2026-12-01,2026-12-12,Rencana,25,0,Ya,Fajar Nugraha,batch 7
