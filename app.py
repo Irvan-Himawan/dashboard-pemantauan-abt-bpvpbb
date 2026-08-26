@@ -17,7 +17,6 @@ KAMUS_BULAN = {
 
 @st.cache_data(ttl=600)
 def load_data():
-    # Mengambil ID dari brankas rahasia Streamlit Cloud
     sheet_id = st.secrets["SHEET_ID"]
     gid = st.secrets["SHEET_GID"]
     csv_url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=csv&gid={gid}"
@@ -42,12 +41,24 @@ def load_data():
         df['nama_tempat_pelatihan'] = df['nama_tempat_pelatihan'].fillna('Belum Ditentukan')
     if 'pelatihan' in df.columns:
         df['pelatihan'] = df['pelatihan'].fillna('Belum Ditentukan')
-    if 'kejuruan' in df.columns:
-        df['kejuruan'] = df['kejuruan'].fillna('Belum Ditentukan')
+   
     
-    # 4. EKSTRAK POS ANGGARAN
-    def ekstrak_pos(id_prog):
-        id_prog = str(id_prog).upper()
+   # 4. EKSTRAK POS ANGGARAN (SISTEM HIJACKING / TITIP PAKET)
+    def tentukan_pos(row):
+        # Lapis 1: Cek kolom 'sumber_anggaran' terlebih dahulu
+        if 'sumber_anggaran' in row and pd.notna(row['sumber_anggaran']):
+            sumber = str(row['sumber_anggaran']).upper()
+            
+            # Jika anggarannya dari pusat (UPTP), paksa masuk ke tab PBK-Reguler!
+            if "UPTP" in sumber:
+                return "PBK-Reguler"
+            
+            # Jika anggarannya murni daerah (UPTD), paksa masuk ke tab UPTD
+            elif "UPTD" in sumber:
+                return "UPTD"
+            
+        # Lapis 2: Jika sumber_anggaran kosong, gunakan identitas default dari id_program
+        id_prog = str(row['id_program']).upper()
         if "PBK" in id_prog: return "PBK-Reguler"
         elif "TMT" in id_prog or "DUDI" in id_prog: return "TMT DUDI"
         elif "LPKS" in id_prog: return "LPKS"
@@ -56,7 +67,8 @@ def load_data():
         elif "PRD" in id_prog or "PROD" in id_prog: return "Produktivitas"
         else: return "Lainnya"
         
-    df['pos_anggaran'] = df['id_program'].apply(ekstrak_pos)
+    # Terapkan fungsi ke seluruh baris (axis=1)
+    df['pos_anggaran'] = df.apply(tentukan_pos, axis=1)
     
     # 5. PENERJEMAH & KONVERSI TANGGAL
     def konversi_tgl(val):
@@ -79,10 +91,17 @@ def load_data():
     df['tgl_awal_pelatihan'] = df['tgl_awal_pelatihan'].apply(konversi_tgl)
     df['tgl_akhir_pelatihan'] = df['tgl_akhir_pelatihan'].apply(konversi_tgl)
     
-    # 6. PENANGANAN TANGGAL KOSONG UNTUK HEATMAP
-    df['Bulan_Tahun'] = df['tgl_awal_pelatihan'].dt.strftime('%Y-%m')
-    df['Bulan_Tahun'] = df['Bulan_Tahun'].fillna('Belum terjadwal')
+    # 6. PENANGANAN TANGGAL KOSONG UNTUK HEATMAP (VERSI BULAN INDONESIA)
+    NAMA_BULAN_INDO = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+                       'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
     
+    def format_bulan_indo(dt_val):
+        if pd.isna(dt_val):
+            return 'Belum terjadwal'
+        return NAMA_BULAN_INDO[dt_val.month - 1]
+
+    df['Bulan_Tahun'] = df['tgl_awal_pelatihan'].apply(format_bulan_indo)
+
     # 7. PASTIKAN DATA NUMERIK VALID
     df['rencana_peserta'] = pd.to_numeric(df['rencana_peserta'], errors='coerce').fillna(0)
     df['realisasi_peserta'] = pd.to_numeric(df['realisasi_peserta'], errors='coerce').fillna(0)
@@ -101,9 +120,19 @@ date_col_config = {
 }
 warna_status = {'Proses': '#1f77b4', 'Rencana': '#ff7f0e', 'Selesai': '#2ca02c'}
 
+# ==========================================
+# BAGIAN HEADER & TOMBOL REFRESH
+# ==========================================
 st.title("📊 Dashboard Eksekutif Pelatihan ABT")
 st.markdown("**Balai Pelatihan Vokasi dan Produktivitas (BPVP) Bandung Barat**")
-st.write(f"*Data Live tersinkronisasi. Akses terakhir: {hari_ini.strftime('%d %B %Y')}*")
+
+col_header_1, col_header_2 = st.columns([3, 1])
+with col_header_1:
+    st.write(f"*Data Live tersinkronisasi. Akses terakhir: {hari_ini.strftime('%d %B %Y')}*")
+with col_header_2:
+    if st.button("🔄 Perbarui Data Sekarang", use_container_width=True):
+        st.cache_data.clear() # Membersihkan memori (cache)
+        st.rerun()            # Memaksa halaman memuat ulang seketika
 
 tabs = st.tabs(["🌟 Master Overview", "PBK-Reguler", "TMT DUDI", "LPKS", "BLKK", "UPTD", "Produktivitas"])
 
@@ -114,7 +143,6 @@ with tabs[0]:
     st.subheader("Ringkasan Eksekutif: Target vs Rencana vs Realisasi")
     
     tot_tgt_paket = sum(TARGET_DIPA_PAKET.values())
-    # PERBAIKAN LOGIKA: Hitung SEMUA paket yang terdata sebagai Total Rencana
     tot_ren_paket = len(df_aktif) 
     tot_real_paket = len(df_aktif[df_aktif['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]) 
     
@@ -149,9 +177,13 @@ with tabs[0]:
     hm_cols = st.columns(2) 
     
     all_months_raw = df_aktif['Bulan_Tahun'].unique().tolist()
-    all_months = sorted([m for m in all_months_raw if m != 'Belum terjadwal'])
-    if 'Belum terjadwal' in all_months_raw:
-        all_months.insert(0, 'Belum terjadwal')
+    
+    # Memaksa urutan array sesuai kalender, bukan urutan abjad
+    NAMA_BULAN_INDO = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+                       'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
+    urutan_pakem = ['Belum terjadwal'] + NAMA_BULAN_INDO
+    
+    all_months = [m for m in urutan_pakem if m in all_months_raw]
         
     status_order = ['Rencana', 'Proses', 'Selesai'] 
     
@@ -165,7 +197,6 @@ with tabs[0]:
                 st.info("BELUM ADA DATA RENCANA PELATIHAN")
                 continue 
                 
-            # PERBAIKAN LOGIKA: Hitung semua yang terdata di pos ini
             r_paket_hm = len(df_pos_hm) 
             s_paket_hm = len(df_pos_hm[df_pos_hm['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])])
             
@@ -227,7 +258,6 @@ for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
         t_paket = TARGET_DIPA_PAKET[pos_name]
         t_peserta = TARGET_DIPA_PESERTA[pos_name]
         
-        # PERBAIKAN LOGIKA 
         r_paket = len(df_pos_detail)
         r_peserta = df_pos_detail['rencana_peserta'].sum()
         
@@ -261,7 +291,7 @@ for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
         
         if not df_warning.empty:
             st.error(f"🚨 **PERHATIAN:** Terdapat **{len(df_warning)} Paket** yang dijadwalkan mulai dalam waktu kurang dari 12 hari namun belum berubah status menjadi 'Proses'!")
-            st.dataframe(df_warning[['id_program', 'pelatihan', 'tgl_awal_pelatihan', 'pic_pelatihan']], column_config=date_col_config, use_container_width=True)
+            st.dataframe(df_warning[['id_program', 'batch_pelatihan','pelatihan', 'tgl_awal_pelatihan', 'pic_pelatihan']], column_config=date_col_config, use_container_width=True, hide_index=True)
         else:
             st.success("✅ Terkendali: Tidak ada kegiatan Rencana yang terancam meleset dari jadwal (H-12).")
             
@@ -303,7 +333,7 @@ for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
         st.divider()
 
         st.markdown("#### 🎯 Tren Popularitas: Kejuruan & Program Pelatihan")
-        df_kejuruan_valid = df_pos_detail[df_pos_detail['pelatihan'] != 'Belum Ditentukan']
+        df_kejuruan_valid = df_pos_detail[df_pos_detail['pelatihan'].notna()]
         if not df_kejuruan_valid.empty and 'kejuruan' in df_kejuruan_valid.columns:
             df_kejuruan = df_kejuruan_valid.groupby(['kejuruan', 'pelatihan']).size().reset_index(name='Frekuensi')
             df_kejuruan = df_kejuruan.sort_values(by='Frekuensi', ascending=True) 
@@ -350,8 +380,17 @@ for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
             st.divider()
         
         st.write("Tabel Rincian Paket Pelatihan:")
+        
+        # --- PERBAIKAN NOMOR URUT DINAMIS ---
+        # Buat salinan data agar tidak merubah data asli
+        df_tabel = df_pos_detail.copy()
+        
+        # Timpa kolom 'no' dengan urutan baru dari 1 sampai jumlah baris data
+        df_tabel['no'] = range(1, len(df_tabel) + 1)
+        # -----------------------------------
+        
         st.dataframe(
-            df_pos_detail[['no', 'id_program', 'batch_pelatihan', 'kejuruan', 'pelatihan', 'nama_tempat_pelatihan', 'tgl_awal_pelatihan', 'tgl_akhir_pelatihan', 'rencana_peserta', 'realisasi_peserta', 'sertifikasi', 'status_kegiatan_pelatihan', 'pic_pelatihan']], 
+            df_tabel[['no', 'id_program', 'batch_pelatihan', 'kejuruan', 'pelatihan', 'nama_tempat_pelatihan', 'tgl_awal_pelatihan', 'tgl_akhir_pelatihan', 'rencana_peserta', 'realisasi_peserta', 'sertifikasi', 'status_kegiatan_pelatihan', 'pic_pelatihan']], 
             column_config=date_col_config, 
             use_container_width=True,
             hide_index=True
