@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 st.set_page_config(page_title="Dashboard Monitoring ABT", layout="wide")
 
-TARGET_DIPA_PAKET = {"PBK-Reguler": 237, "TMT DUDI": 238, "LPKS": 31, "BLKK": 32, "UPTD": 46, "Produktivitas": 2}
+TARGET_DIPA_PAKET = {"PBK-Reguler": 237, "TMT DUDI": 238, "LPKS": 31, "BLKK": 32, "UPTD": 58, "Produktivitas": 2}
 TARGET_DIPA_PESERTA = {pos: (paket * 25 if pos == "Produktivitas" else paket * 16) for pos, paket in TARGET_DIPA_PAKET.items()}
 
 KAMUS_BULAN = {
