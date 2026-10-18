@@ -5,8 +5,31 @@ from datetime import datetime, timedelta
 
 st.set_page_config(page_title="Dashboard Monitoring ABT", layout="wide")
 
-TARGET_DIPA_PAKET = {"PBK-Reguler": 237, "TMT DUDI": 238, "LPKS": 31, "BLKK": 32, "UPTD": 58, "Produktivitas": 2}
-TARGET_DIPA_PESERTA = {pos: (paket * 25 if pos == "Produktivitas" else paket * 16) for pos, paket in TARGET_DIPA_PAKET.items()}
+# --- UPDATE: PEMISAHAN TARGET DIPA & NON-DIPA ---
+TARGET_DIPA_PAKET = {
+    "PBK-Reguler": 237, 
+    "PBK-PHK": 121, 
+    "TMT DUDI": 238, 
+    "LPKS": 31, 
+    "BLKK": 32, 
+    "UPTD": 58, 
+    "Produktivitas": 2
+}
+TARGET_NON_DIPA_PAKET = {
+    "TMT-KWU": 100
+}
+
+# Gabungkan keduanya hanya untuk keperluan pembuatan Tab Detail
+ALL_POS_PAKET = {**TARGET_DIPA_PAKET, **TARGET_NON_DIPA_PAKET}
+
+# Hitung target peserta (Produktivitas & KWU = 25 orang, sisanya = 16 orang)
+ALL_POS_PESERTA = {}
+for pos, paket in ALL_POS_PAKET.items():
+    if pos in ["Produktivitas", "TMT-KWU"]:
+        ALL_POS_PESERTA[pos] = paket * 25
+    else:
+        ALL_POS_PESERTA[pos] = paket * 16
+# -----------------------------------------------
 
 KAMUS_BULAN = {
     'Januari': 'January', 'Februari': 'February', 'Maret': 'March',
@@ -42,32 +65,38 @@ def load_data():
     if 'pelatihan' in df.columns:
         df['pelatihan'] = df['pelatihan'].fillna('Belum Ditentukan')
    
-    
-   # 4. EKSTRAK POS ANGGARAN (SISTEM HIJACKING / TITIP PAKET)
+    # 4. EKSTRAK POS ANGGARAN (SISTEM HIJACKING V5 - KETAT & AMAN)
     def tentukan_pos(row):
-        # Lapis 1: Cek kolom 'sumber_anggaran' terlebih dahulu
-        if 'sumber_anggaran' in row and pd.notna(row['sumber_anggaran']):
-            sumber = str(row['sumber_anggaran']).upper()
-            
-            # Jika anggarannya dari pusat (UPTP), paksa masuk ke tab PBK-Reguler!
-            if "UPTP" in sumber:
-                return "PBK-Reguler"
-            
-            # Jika anggarannya murni daerah (UPTD), paksa masuk ke tab UPTD
-            elif "UPTD" in sumber:
-                return "UPTD"
-            
-        # Lapis 2: Jika sumber_anggaran kosong, gunakan identitas default dari id_program
-        id_prog = str(row['id_program']).upper()
-        if "PBK" in id_prog: return "PBK-Reguler"
-        elif "TMT" in id_prog or "DUDI" in id_prog: return "TMT DUDI"
-        elif "LPKS" in id_prog: return "LPKS"
-        elif "BLK" in id_prog: return "BLKK"
-        elif "UPTD" in id_prog: return "UPTD"
-        elif "PRD" in id_prog or "PROD" in id_prog: return "Produktivitas"
-        else: return "Lainnya"
+        sumber = str(row['sumber_anggaran']).upper() if 'sumber_anggaran' in row and pd.notna(row['sumber_anggaran']) else ""
+        kriteria = str(row['kriteria_peserta']).upper() if 'kriteria_peserta' in row and pd.notna(row['kriteria_peserta']) else ""
+        id_prog = str(row['id_program']).upper() # Tarik identitas ID lebih awal
         
-    # Terapkan fungsi ke seluruh baris (axis=1)
+        # PRIORITAS 1: AFIRMASI PHK (Mutlak masuk PBK-PHK)
+        if "PHK" in kriteria:
+            return "PBK-PHK"
+            
+        # PRIORITAS 2: HIJACKING KHUSUS UPTD (Syarat: ID UPTD + Anggaran UPTP)
+        if "UPTD" in id_prog and "UPTP" in sumber:
+            return "PBK-Reguler"
+            
+        # PRIORITAS 3: KEMBALI KE IDENTITAS ASLI (Sesuai Kode ID Program)
+        if "PRD" in id_prog or "PROD" in id_prog: 
+            return "Produktivitas"
+        elif "KWU" in id_prog: 
+            return "TMT-KWU"
+        elif "PBK" in id_prog: 
+            return "PBK-Reguler"
+        elif "TMT" in id_prog or "DUDI" in id_prog: 
+            return "TMT DUDI"
+        elif "LPKS" in id_prog: 
+            return "LPKS"
+        elif "BLK" in id_prog: 
+            return "BLKK"
+        elif "UPTD" in id_prog: 
+            return "UPTD" # UPTD normal (anggaran UPTD atau kosong) aman di sini
+        else: 
+            return "Lainnya"
+        
     df['pos_anggaran'] = df.apply(tentukan_pos, axis=1)
     
     # 5. PENERJEMAH & KONVERSI TANGGAL
@@ -78,7 +107,10 @@ def load_data():
         val_str = str(val).strip()
         
         if val_str.replace('.', '', 1).isdigit():
-            return pd.Timestamp('1899-12-30') + pd.Timedelta(days=float(val_str))
+            try:
+                return pd.Timestamp('1899-12-30') + pd.Timedelta(days=float(val_str))
+            except:
+                return pd.NaT
         
         for id_bln, en_bln in KAMUS_BULAN.items():
             val_str = val_str.replace(id_bln, en_bln)
@@ -131,24 +163,30 @@ with col_header_1:
     st.write(f"*Data Live tersinkronisasi. Akses terakhir: {hari_ini.strftime('%d %B %Y')}*")
 with col_header_2:
     if st.button("🔄 Perbarui Data Sekarang", use_container_width=True):
-        st.cache_data.clear() # Membersihkan memori (cache)
-        st.rerun()            # Memaksa halaman memuat ulang seketika
+        st.cache_data.clear() 
+        st.rerun()            
 
-tabs = st.tabs(["🌟 Master Overview", "PBK-Reguler", "TMT DUDI", "LPKS", "BLKK", "UPTD", "Produktivitas"])
+# Buat nama tab secara otomatis dari gabungan seluruh Pos (Termasuk Non-DIPA)
+nama_tab = ["🌟 Master Overview"] + list(ALL_POS_PAKET.keys())
+tabs = st.tabs(nama_tab)
 
 # ==========================================
-# TAB 1: MASTER OVERVIEW
+# TAB 1: MASTER OVERVIEW (HANYA DIPA)
 # ==========================================
 with tabs[0]:
     st.subheader("Ringkasan Eksekutif: Target vs Rencana vs Realisasi")
     
-    tot_tgt_paket = sum(TARGET_DIPA_PAKET.values())
-    tot_ren_paket = len(df_aktif) 
-    tot_real_paket = len(df_aktif[df_aktif['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]) 
+    # KUNCI KARANTINA: Hanya ambil data DIPA resmi
+    df_dipa = df_aktif[df_aktif['pos_anggaran'].isin(TARGET_DIPA_PAKET.keys())]
     
-    tot_tgt_peserta = sum(TARGET_DIPA_PESERTA.values())
-    tot_ren_peserta = df_aktif['rencana_peserta'].sum()
-    tot_real_peserta = df_aktif['realisasi_peserta'].sum()
+    tot_tgt_paket = sum(TARGET_DIPA_PAKET.values())
+    tot_ren_paket = len(df_dipa) 
+    tot_real_paket = len(df_dipa[df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]) 
+    
+    tot_tgt_peserta = sum([ALL_POS_PESERTA[k] for k in TARGET_DIPA_PAKET.keys()])
+    tot_ren_peserta = df_dipa['rencana_peserta'].sum()
+    # Pengaman Realisasi: Hanya yang sudah berjalan/selesai
+    tot_real_peserta = df_dipa[df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]['realisasi_peserta'].sum()
     
     persen_ren_paket = (tot_ren_paket / tot_tgt_paket) * 100 if tot_tgt_paket > 0 else 0
     persen_real_paket = (tot_real_paket / tot_tgt_paket) * 100 if tot_tgt_paket > 0 else 0
@@ -171,25 +209,23 @@ with tabs[0]:
     
     st.divider()
     
-    st.markdown("#### 📅 Matriks Kinerja Bulanan per Pos Anggaran")
+    st.markdown("#### 📅 Matriks Kinerja Bulanan per Pos Anggaran (DIPA)")
     st.info("💡 Paket yang belum memiliki jadwal akan terkumpul di kolom **'Belum terjadwal'** di sebelah kiri.")
     
     hm_cols = st.columns(2) 
     
-    all_months_raw = df_aktif['Bulan_Tahun'].unique().tolist()
+    all_months_raw = df_dipa['Bulan_Tahun'].unique().tolist()
     
-    # Memaksa urutan array sesuai kalender, bukan urutan abjad
     NAMA_BULAN_INDO = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
                        'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
     urutan_pakem = ['Belum terjadwal'] + NAMA_BULAN_INDO
-    
     all_months = [m for m in urutan_pakem if m in all_months_raw]
-        
     status_order = ['Rencana', 'Proses', 'Selesai'] 
     
+    # Hanya loop untuk pos anggaran DIPA
     for idx, pos_name in enumerate(TARGET_DIPA_PAKET.keys()):
         with hm_cols[idx % 2]:
-            df_pos_hm = df_aktif[df_aktif['pos_anggaran'] == pos_name]
+            df_pos_hm = df_dipa[df_dipa['pos_anggaran'] == pos_name]
             t_paket_hm = TARGET_DIPA_PAKET[pos_name]
             
             if df_pos_hm.empty:
@@ -224,8 +260,8 @@ with tabs[0]:
     st.divider()
     
     st.markdown("#### 🎓 Status Eksekusi Paket Pelatihan Bersertifikasi (Khusus UJK = Ya)")
-    if 'sertifikasi' in df_aktif.columns:
-        df_ujk_ya = df_aktif[df_aktif['sertifikasi'] == 'Ya']
+    if 'sertifikasi' in df_dipa.columns:
+        df_ujk_ya = df_dipa[df_dipa['sertifikasi'] == 'Ya']
         
         if not df_ujk_ya.empty:
             df_ujk_master_stacked = df_ujk_ya.groupby(['pos_anggaran', 'status_kegiatan_pelatihan']).size().reset_index(name='Jumlah_Paket')
@@ -244,26 +280,31 @@ with tabs[0]:
             st.info("BELUM ADA DATA RENCANA PELATIHAN BER-UJK")
 
 # ==========================================
-# TAB 2-7: DETAIL PER POS
+# TAB DETAIL (Mencakup DIPA & Non-DIPA)
 # ==========================================
-for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
+for i, pos_name in enumerate(ALL_POS_PAKET.keys(), start=1):
     with tabs[i]:
         st.subheader(f"Dashboard Pengendalian: {pos_name}")
+        
+        if pos_name == "TMT-KWU":
+            st.warning("⚠️ **INFO NON-DIPA:** Program TMT-Kewirausahaan pada halaman ini berdiri sendiri dan **TIDAK DIHITUNG** ke dalam metrik capaian DIPA pada Master Overview.")
+            
         df_pos_detail = df_aktif[df_aktif['pos_anggaran'] == pos_name]
         
         if df_pos_detail.empty:
             st.info("BELUM ADA DATA RENCANA PELATIHAN")
             continue 
         
-        t_paket = TARGET_DIPA_PAKET[pos_name]
-        t_peserta = TARGET_DIPA_PESERTA[pos_name]
+        t_paket = ALL_POS_PAKET[pos_name]
+        t_peserta = ALL_POS_PESERTA[pos_name]
         
         r_paket = len(df_pos_detail)
         r_peserta = df_pos_detail['rencana_peserta'].sum()
         
         df_pos_proses = df_pos_detail[df_pos_detail['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]
         rl_paket = len(df_pos_proses)
-        rl_peserta = df_pos_detail['realisasi_peserta'].sum()
+        # Pengaman Realisasi: Hanya jumlahkan yang sudah berjalan
+        rl_peserta = df_pos_proses['realisasi_peserta'].sum()
         
         p_ren_paket = (r_paket/t_paket)*100 if t_paket>0 else 0
         p_real_paket = (rl_paket/t_paket)*100 if t_paket>0 else 0
@@ -380,17 +421,15 @@ for i, pos_name in enumerate(TARGET_DIPA_PAKET.keys(), start=1):
             st.divider()
         
         st.write("Tabel Rincian Paket Pelatihan:")
-        
-        # --- PERBAIKAN NOMOR URUT DINAMIS ---
-        # Buat salinan data agar tidak merubah data asli
         df_tabel = df_pos_detail.copy()
-        
-        # Timpa kolom 'no' dengan urutan baru dari 1 sampai jumlah baris data
         df_tabel['no'] = range(1, len(df_tabel) + 1)
-        # -----------------------------------
         
+        kolom_tabel = ['no', 'id_program', 'batch_pelatihan', 'kejuruan', 'pelatihan', 'nama_tempat_pelatihan', 'tgl_awal_pelatihan', 'tgl_akhir_pelatihan', 'rencana_peserta', 'realisasi_peserta', 'sertifikasi', 'status_kegiatan_pelatihan', 'pic_pelatihan']
+        if 'kriteria_peserta' in df_tabel.columns:
+            kolom_tabel.insert(1, 'kriteria_peserta') 
+            
         st.dataframe(
-            df_tabel[['no', 'id_program', 'batch_pelatihan', 'kejuruan', 'pelatihan', 'nama_tempat_pelatihan', 'tgl_awal_pelatihan', 'tgl_akhir_pelatihan', 'rencana_peserta', 'realisasi_peserta', 'sertifikasi', 'status_kegiatan_pelatihan', 'pic_pelatihan']], 
+            df_tabel[kolom_tabel], 
             column_config=date_col_config, 
             use_container_width=True,
             hide_index=True
