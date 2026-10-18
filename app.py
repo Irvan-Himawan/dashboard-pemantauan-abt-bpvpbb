@@ -123,7 +123,7 @@ warna_status = {'Proses': '#1f77b4', 'Rencana': '#ff7f0e', 'Selesai': '#2ca02c'}
 # ==========================================
 # BAGIAN HEADER & TOMBOL REFRESH
 # ==========================================
-st.title("📊 Dashboard Eksekutif Pelatihan ABT")
+st.title("📊 Dashboard Pemantauan Pelatihan ABT")
 st.markdown("**Balai Pelatihan Vokasi dan Produktivitas (BPVP) Bandung Barat**")
 
 col_header_1, col_header_2 = st.columns([3, 1])
