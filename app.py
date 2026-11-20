@@ -187,19 +187,36 @@ tabs = st.tabs(nama_tab)
 with tabs[0]:
     st.subheader("Ringkasan Eksekutif: Target vs Rencana vs Realisasi")
     
-    if not df_pbk_tanpa_kriteria.empty:
-        st.warning(f"⚠️ **PERHATIAN:** Terdapat **{len(df_pbk_tanpa_kriteria)} paket PBK-Reguler** yang belum memiliki kategori `kriteria_peserta` (masih kosong). Paket ini **tetap dihitung di Master Overview**, namun belum masuk ke capaian tab **PBK-Reguler**.")
-    
     # KUNCI KARANTINA: Ambil semua data DIPA (termasuk Reguler, PHK, dan yang kriterianya masih kosong)
     df_dipa = df_aktif[df_aktif['pos_anggaran'].isin(TARGET_DIPA_PAKET.keys())]
     
+    if not df_pbk_tanpa_kriteria.empty:
+        st.warning(f"⚠️ **PERHATIAN:** Terdapat **{len(df_pbk_tanpa_kriteria)} paket PBK-Reguler** yang belum memiliki kategori `kriteria_peserta` (masih kosong). Paket ini **tetap dihitung di Master Overview**, namun belum masuk ke capaian tab **PBK-Reguler**.")
+    
+    # WARNING KHUSUS: Status Selesai tetapi realisasi peserta masih 0 / kosong
+    df_selesai_nol = df_dipa[
+        (df_dipa['status_kegiatan_pelatihan'] == 'Selesai') & 
+        (df_dipa['realisasi_peserta'] <= 0)
+    ]
+    if not df_selesai_nol.empty:
+        st.warning(f"⚠️ **PERHATIAN DATA REALISASI:** Terdapat **{len(df_selesai_nol)} paket** berstatus **'Selesai'** tetapi jumlah `realisasi_peserta` masih **0 / kosong**. Paket ini **tidak dihitung** dalam capaian Realisasi Paket.")
+        with st.expander(f"Lihat Daftar {len(df_selesai_nol)} Paket Selesai dengan Realisasi Peserta 0"):
+            kolom_selesai_nol = [c for c in ['id_program', 'pos_anggaran', 'batch_pelatihan', 'pelatihan', 'nama_tempat_pelatihan', 'status_kegiatan_pelatihan', 'realisasi_peserta', 'pic_pelatihan'] if c in df_selesai_nol.columns]
+            st.dataframe(df_selesai_nol[kolom_selesai_nol], use_container_width=True, hide_index=True)
+    
+    # SYARAT REALISASI PAKET: Status bukan Rencana (Proses/Selesai) DAN realisasi_peserta > 0
+    df_dipa_realisasi = df_dipa[
+        (df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])) & 
+        (df_dipa['realisasi_peserta'] > 0)
+    ]
+    
     tot_tgt_paket = sum(TARGET_DIPA_PAKET.values())
     tot_ren_paket = len(df_dipa) 
-    tot_real_paket = len(df_dipa[df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]) 
+    tot_real_paket = len(df_dipa_realisasi) 
     
     tot_tgt_peserta = sum([ALL_POS_PESERTA[k] for k in TARGET_DIPA_PAKET.keys()])
     tot_ren_peserta = df_dipa['rencana_peserta'].sum()
-    tot_real_peserta = df_dipa[df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]['realisasi_peserta'].sum()
+    tot_real_peserta = df_dipa_realisasi['realisasi_peserta'].sum()
     
     persen_ren_paket = (tot_ren_paket / tot_tgt_paket) * 100 if tot_tgt_paket > 0 else 0
     persen_real_paket = (tot_real_paket / tot_tgt_paket) * 100 if tot_tgt_paket > 0 else 0
@@ -247,7 +264,10 @@ with tabs[0]:
                 continue 
                 
             r_paket_hm = len(df_pos_hm)
-            s_paket_hm = len(df_pos_hm[df_pos_hm['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])])
+            s_paket_hm = len(df_pos_hm[
+                (df_pos_hm['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])) &
+                (df_pos_hm['realisasi_peserta'] > 0)
+            ])
             
             persen_rencana_hm = (r_paket_hm / t_paket_hm) * 100 if t_paket_hm > 0 else 0
             persen_terlaksana_hm = (s_paket_hm / t_paket_hm) * 100 if t_paket_hm > 0 else 0
