@@ -7,7 +7,7 @@ st.set_page_config(page_title="Dashboard Monitoring ABT", layout="wide")
 
 # --- UPDATE: PEMISAHAN TARGET DIPA & NON-DIPA ---
 TARGET_DIPA_PAKET = {
-    "PBK-Reguler": 237, 
+    "PBK-Reguler": 116, 
     "PBK-PHK": 121, 
     "TMT DUDI": 238, 
     "LPKS": 31, 
