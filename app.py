@@ -47,7 +47,7 @@ def load_data():
     df = pd.read_csv(csv_url)
     
     # 1. STANDARISASI TEKS KOSONG
-    cols_to_clean = ['nama_tempat_pelatihan', 'pelatihan', 'kejuruan', 'status_kegiatan_pelatihan']
+    cols_to_clean = ['nama_tempat_pelatihan', 'pelatihan', 'kejuruan', 'status_kegiatan_pelatihan', 'kriteria_peserta']
     for col in cols_to_clean:
         if col in df.columns:
             df[col] = df[col].replace(r'^\s*$', float('nan'), regex=True)
@@ -69,7 +69,7 @@ def load_data():
     def tentukan_pos(row):
         sumber = str(row['sumber_anggaran']).upper() if 'sumber_anggaran' in row and pd.notna(row['sumber_anggaran']) else ""
         kriteria = str(row['kriteria_peserta']).upper() if 'kriteria_peserta' in row and pd.notna(row['kriteria_peserta']) else ""
-        id_prog = str(row['id_program']).upper() # Tarik identitas ID lebih awal
+        id_prog = str(row['id_program']).upper()
         
         # PRIORITAS 1: AFIRMASI PHK (Mutlak masuk PBK-PHK)
         if "PHK" in kriteria:
@@ -93,7 +93,7 @@ def load_data():
         elif "BLK" in id_prog: 
             return "BLKK"
         elif "UPTD" in id_prog: 
-            return "UPTD" # UPTD normal (anggaran UPTD atau kosong) aman di sini
+            return "UPTD"
         else: 
             return "Lainnya"
         
@@ -143,6 +143,17 @@ def load_data():
 df_raw = load_data()
 df_aktif = df_raw[df_raw['status_kegiatan_pelatihan'] != 'Batal']
 
+# --- FILTER KHUSUS TAB PBK-REGULER: HANYA KRITERIA 'REGULER' YANG DIHITUNG ---
+if 'kriteria_peserta' in df_aktif.columns:
+    is_pbk_reg = df_aktif['pos_anggaran'] == 'PBK-Reguler'
+    is_kriteria_reg = df_aktif['kriteria_peserta'].fillna('').astype(str).str.strip().str.upper() == 'REGULER'
+    df_pbk_tanpa_kriteria = df_aktif[is_pbk_reg & (~is_kriteria_reg)]
+    df_aktif_valid = df_aktif[~(is_pbk_reg & (~is_kriteria_reg))]
+else:
+    df_pbk_tanpa_kriteria = pd.DataFrame()
+    df_aktif_valid = df_aktif.copy()
+# -----------------------------------------------------------------------------
+
 hari_ini = pd.Timestamp.now().normalize()
 batas_h12 = hari_ini + pd.Timedelta(days=12)
 
@@ -171,12 +182,15 @@ nama_tab = ["🌟 Master Overview"] + list(ALL_POS_PAKET.keys())
 tabs = st.tabs(nama_tab)
 
 # ==========================================
-# TAB 1: MASTER OVERVIEW (HANYA DIPA)
+# TAB 1: MASTER OVERVIEW (SEMUA DATA DIPA: REGULER, PHK, DAN KOSONG)
 # ==========================================
 with tabs[0]:
     st.subheader("Ringkasan Eksekutif: Target vs Rencana vs Realisasi")
     
-    # KUNCI KARANTINA: Hanya ambil data DIPA resmi
+    if not df_pbk_tanpa_kriteria.empty:
+        st.warning(f"⚠️ **PERHATIAN:** Terdapat **{len(df_pbk_tanpa_kriteria)} paket PBK-Reguler** yang belum memiliki kategori `kriteria_peserta` (masih kosong). Paket ini **tetap dihitung di Master Overview**, namun belum masuk ke capaian tab **PBK-Reguler**.")
+    
+    # KUNCI KARANTINA: Ambil semua data DIPA (termasuk Reguler, PHK, dan yang kriterianya masih kosong)
     df_dipa = df_aktif[df_aktif['pos_anggaran'].isin(TARGET_DIPA_PAKET.keys())]
     
     tot_tgt_paket = sum(TARGET_DIPA_PAKET.values())
@@ -185,7 +199,6 @@ with tabs[0]:
     
     tot_tgt_peserta = sum([ALL_POS_PESERTA[k] for k in TARGET_DIPA_PAKET.keys()])
     tot_ren_peserta = df_dipa['rencana_peserta'].sum()
-    # Pengaman Realisasi: Hanya yang sudah berjalan/selesai
     tot_real_peserta = df_dipa[df_dipa['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]['realisasi_peserta'].sum()
     
     persen_ren_paket = (tot_ren_paket / tot_tgt_paket) * 100 if tot_tgt_paket > 0 else 0
@@ -233,7 +246,7 @@ with tabs[0]:
                 st.info("BELUM ADA DATA RENCANA PELATIHAN")
                 continue 
                 
-            r_paket_hm = len(df_pos_hm) 
+            r_paket_hm = len(df_pos_hm)
             s_paket_hm = len(df_pos_hm[df_pos_hm['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])])
             
             persen_rencana_hm = (r_paket_hm / t_paket_hm) * 100 if t_paket_hm > 0 else 0
@@ -289,7 +302,13 @@ for i, pos_name in enumerate(ALL_POS_PAKET.keys(), start=1):
         if pos_name == "TMT-KWU":
             st.warning("⚠️ **INFO NON-DIPA:** Program TMT-Kewirausahaan pada halaman ini berdiri sendiri dan **TIDAK DIHITUNG** ke dalam metrik capaian DIPA pada Master Overview.")
             
-        df_pos_detail = df_aktif[df_aktif['pos_anggaran'] == pos_name]
+        if pos_name == "PBK-Reguler" and not df_pbk_tanpa_kriteria.empty:
+            st.warning(f"⚠️ **PERHATIAN:** Terdapat **{len(df_pbk_tanpa_kriteria)} paket** yang belum memiliki kategori `kriteria_peserta` (masih kosong). Paket-paket ini **tidak dihitung** dalam capaian tab PBK-Reguler (namun tetap terhitung di Master Overview).")
+            with st.expander(f"Lihat Daftar {len(df_pbk_tanpa_kriteria)} Paket Belum Berkategori Kriteria Peserta"):
+                kolom_cek = [c for c in ['id_program', 'batch_pelatihan', 'pelatihan', 'nama_tempat_pelatihan', 'status_kegiatan_pelatihan', 'pic_pelatihan'] if c in df_pbk_tanpa_kriteria.columns]
+                st.dataframe(df_pbk_tanpa_kriteria[kolom_cek], use_container_width=True, hide_index=True)
+            
+        df_pos_detail = df_aktif_valid[df_aktif_valid['pos_anggaran'] == pos_name]
         
         if df_pos_detail.empty:
             st.info("BELUM ADA DATA RENCANA PELATIHAN")
@@ -303,7 +322,6 @@ for i, pos_name in enumerate(ALL_POS_PAKET.keys(), start=1):
         
         df_pos_proses = df_pos_detail[df_pos_detail['status_kegiatan_pelatihan'].isin(['Proses', 'Selesai'])]
         rl_paket = len(df_pos_proses)
-        # Pengaman Realisasi: Hanya jumlahkan yang sudah berjalan
         rl_peserta = df_pos_proses['realisasi_peserta'].sum()
         
         p_ren_paket = (r_paket/t_paket)*100 if t_paket>0 else 0
